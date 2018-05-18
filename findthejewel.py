@@ -1,6 +1,5 @@
 import os
 import time
-#this is a test comment
 
 def clear():
 	os.system("clear")
