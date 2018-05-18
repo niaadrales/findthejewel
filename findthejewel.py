@@ -201,7 +201,8 @@ raw_input("Inside that village,you saw 5 villagers.(Press Enter)")
 clear()
 raw_input("Every villager trades different items.(Press Enter)")
 clear()
-raw_input("The luberjack trades 1 pickaxe for 10 woods.")
+raw_input("The lumberjack trades 1 pickaxe for 10 woods.")
+clear()
  
    
     
