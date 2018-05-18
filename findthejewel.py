@@ -184,10 +184,11 @@ raw_input("Level 1,there's a jewel in that house!But it's guarded by the wizard.
 clear()
 raw_input("You can only get it if you answered his riddle.(Press Enter)")
 clear()
-raw_input("What belongs to you,but used by everyone?Clue:You got it since you were a baby.")
+raw_input("What has a tail,and a head,but no body.")
 clear()
-if answer.lower() == "your name":
-	print "Your answer is correct!You got the jewel!" 
+if answer.lower() == "penny":
+	print "Your answer is correct!You got the jewel!"
+	print jewelart 
 	print "Your current score is",score 
 	score = score + 5
 	jewel = jewel + 1
