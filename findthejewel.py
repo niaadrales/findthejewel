@@ -188,10 +188,11 @@ answer = raw_input("What has a tail,and a head,but no body.")
 clear()
 if answer.lower() == "penny":
 	print "Your answer is correct!You got the jewel!"
-	print jewelart 
-	print "Your current score is",score 
+	print jewelart
 	score = score + 5
-	jewel = jewel + 1
+	jewel = jewel + 1 
+	print "Your current score is",score 
+	print "And you now have",jewel,"jewel"
 else:
 	print "Your answer is wrong."
 	score = score - 1	
@@ -217,7 +218,9 @@ print "To do that you'll need 4 wood.And you'll need to craft a stone pickaxe an
 print "The wood looks like this.---> o.Or a letter o."
 print "The stick looks like this.---> /"
 print "The wooden planks looks like this.---> 0.Or number 0"
-answer = raw_input("To break wood type b.")
+print "To break wood type b."
+answer = raw_input("")
+clear()
 if answer.lower() == "b":
 	print "You breaked one wood."
 	wood = wood + 1
@@ -226,6 +229,7 @@ else:
 	print "No wood breaked."
 print "You need to keep doing that until you have 15 woods."
 answer = raw_input("")
+clear()
 if answer.lower() == "b":
 	print "You breaked one wood."
 	wood = wood + 1
@@ -233,6 +237,7 @@ if answer.lower() == "b":
 else:
 	print "No wood breaked."
 answer = raw_input("")
+clear()
 if answer.lower() == "b":
 	print "You breaked one wood."
 	wood = wood + 1
@@ -240,6 +245,7 @@ if answer.lower() == "b":
 else:
 	print "No wood breaked."
 answer = raw_input("")
+clear()
 if answer.lower() == "b":
 	print "You breaked one wood."
 	wood = wood + 1
@@ -247,6 +253,7 @@ if answer.lower() == "b":
 else:
 	print "No wood breaked."
 answer = raw_input("")
+clear()
 if answer.lower() == "b":
 	print "You breaked one wood."
 	wood = wood + 1
@@ -254,6 +261,7 @@ if answer.lower() == "b":
 else:
 	print "No wood breaked."
 answer = raw_input("")
+clear()
 if answer.lower() == "b":
 	print "You breaked one wood."
 	wood = wood + 1
@@ -261,6 +269,7 @@ if answer.lower() == "b":
 else:
 	print "No wood breaked."
 answer = raw_input("")
+clear()
 if answer.lower() == "b":
 	print "You breaked one wood."
 	wood = wood + 1
@@ -268,6 +277,7 @@ if answer.lower() == "b":
 else:
 	print "No wood breaked."
 answer = raw_input("")
+clear()
 if answer.lower() == "b":
 	print "You breaked one wood."
 	wood = wood + 1
@@ -275,6 +285,7 @@ if answer.lower() == "b":
 else:
 	print "No wood breaked."
 answer = raw_input("")
+clear()
 if answer.lower() == "b":
 	print "You breaked one wood."
 	wood = wood + 1
@@ -282,6 +293,7 @@ if answer.lower() == "b":
 else:
 	print "No wood breaked."
 answer = raw_input("")
+clear()
 if answer.lower() == "b":
 	print "You breaked one wood."
 	wood = wood + 1
@@ -289,6 +301,7 @@ if answer.lower() == "b":
 else:
 	print "No wood breaked."
 answer = raw_input("")
+clear()
 if answer.lower() == "b":
 	print "You breaked one wood."
 	wood = wood + 1
@@ -296,6 +309,7 @@ if answer.lower() == "b":
 else:
 	print "No wood breaked."
 answer = raw_input("")
+clear()
 if answer.lower() == "b":
 	print "You breaked one wood."
 	wood = wood + 1
@@ -303,6 +317,7 @@ if answer.lower() == "b":
 else:
 	print "No wood breaked."
 answer = raw_input("")
+clear()
 if answer.lower() == "b":
 	print "You breaked one wood."
 	wood = wood + 1
@@ -310,6 +325,7 @@ if answer.lower() == "b":
 else:
 	print "No wood breaked."
 answer = raw_input("")
+clear()
 if answer.lower() == "b":
 	print "You breaked one wood."
 	wood = wood + 1
@@ -317,6 +333,7 @@ if answer.lower() == "b":
 else:
 	print "No wood breaked."
 answer = raw_input("")
+clear()
 if answer.lower() == "b":
 	print "You breaked one wood."
 	wood = wood + 1
@@ -325,6 +342,223 @@ if answer.lower() == "b":
 else:
 	print "No wood breaked."
 print "Okay,now i think you have enough.Except if you breaked no wood.=)"
+print "To craft a crafting bench you'll need 4 woods."
+print "To craft it place 4 wood with space on each of them.Just type four o's."
+answer = raw_input("")
+if answer.lower() == "o o o o":
+	print "You crafted a crafting bench."
+	wood = wood - 4
+else:
+	print "No crafting bench crafted."
+print "The crafted bench isn't just going to show up because you wanted it.It'll just show up when in need."
+print "But you also need to type something to use it."
+print "To use a crafting bench type c."
+print "But,you also need to learn how to craft things."
+raw_input("Press Enter to show how to craft things in Level 2.")
+clear()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    
    
