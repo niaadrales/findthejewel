@@ -201,9 +201,9 @@ raw_input("Inside that village,you saw 5 villagers.(Press Enter)")
 clear()
 raw_input("Every villager trades different items.(Press Enter)")
 clear()
-raw_input("The lumberjack trades 1 pickaxe for 10 woods.(Press Enter)")
+raw_input("The librarian 3 stones trades  pickaxe for 10 wooden planks.(Press Enter)")
 clear()
-raw_input("The blacksmith trades 10 cobblestones for for 1 pickaxe.(Press Enter)")
+raw_input("The blacksmith trades 10 cobblestones for for 1 stone pickaxe.(Press Enter)")
 clear()
 raw_input("The chef trades 2 emeralds for 10 cobblestones.(Press Enter)")
 clear()
@@ -211,7 +211,8 @@ raw_input("The miner trades 1 diamond for 2 emeralds.(Press Enter)")
 clear()
 raw_input("The witch trades 1 jewel for 1 diamond.(Press Enter)")
 clear()
- 
+print "You are given one axe that can last for 15 woods."
+print "You'll have to make a crafting bench."
    
     
     
