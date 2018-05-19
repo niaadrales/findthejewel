@@ -212,12 +212,13 @@ raw_input("The miner trades 1 diamond for 2 emeralds.(Press Enter)")
 clear()
 raw_input("The witch trades 1 jewel for 1 diamond.(Press Enter)")
 clear()
-print "You are given one axe that can last for 15 woods."
+print "You are given one axe that can last for 16 woods."
 print "You'll have to make a crafting bench."
 print "To do that you'll need 4 wood.And you'll need to craft a stone pickaxe and 10 wooden planks."
 print "The wood looks like this.---> o.Or a letter o."
 print "The stick looks like this.---> /"
 print "The wooden planks looks like this.---> 0.Or number 0"
+print "The cobblestones looks like this.---> @ Or an at."
 print "To break wood type b."
 answer = raw_input("")
 clear()
@@ -227,7 +228,15 @@ if answer.lower() == "b":
 	print "You now have",wood
 else:
 	print "No wood breaked."
-print "You need to keep doing that until you have 15 woods."
+print "You need to keep doing that until you have 16 woods."
+answer = raw_input("")
+clear()
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+else:
+	print "No wood breaked."
 answer = raw_input("")
 clear()
 if answer.lower() == "b":
@@ -356,6 +365,26 @@ print "To use a crafting bench type c."
 print "But,you also need to learn how to craft things."
 raw_input("Press Enter to show how to craft things in Level 2.")
 clear()
+time.sleep(1)
+print "stick:o o"
+time.sleep(1)
+print "wooden planks:o"
+time.sleep(1)
+print "pickaxe:/ / / @ @ @"
+time.sleep(1)
+print "crafting bench:o o o o"
+time.sleep(1)
+raw_input("Press Enter when your done.")
+clear()
+print "Okay,use the crafing table to make 3 sticks. 1 wood makes 5 sticks.But your only gonna need 3 but that's okay."
+keyword = raw_input("")
+if keyword.lower() == "c":
+	print ""
+else:
+	print "Error opening the crafting bench.Wrong keyword.Try restarting the game."
+	exit()
+
+
 
 
 
