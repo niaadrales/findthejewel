@@ -184,7 +184,7 @@ raw_input("Level 1,there's a jewel in that house!But it's guarded by the wizard.
 clear()
 raw_input("You can only get it if you answered his riddle.(Press Enter)")
 clear()
-raw_input("What has a tail,and a head,but no body.")
+answer = raw_input("What has a tail,and a head,but no body.")
 clear()
 if answer.lower() == "penny":
 	print "Your answer is correct!You got the jewel!"
@@ -213,6 +213,133 @@ raw_input("The witch trades 1 jewel for 1 diamond.(Press Enter)")
 clear()
 print "You are given one axe that can last for 15 woods."
 print "You'll have to make a crafting bench."
+print "To do that you'll need 4 wood.And you'll need to craft a stone pickaxe and 10 wooden planks."
+print "The wood looks like this.---> o.Or a letter o."
+print "The stick looks like this.---> /"
+print "The wooden planks looks like this.---> 0.Or number 0"
+answer = raw_input("To break wood type b.")
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+else:
+	print "No wood breaked."
+print "You need to keep doing that until you have 15 woods."
+answer = raw_input("")
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+else:
+	print "No wood breaked."
+answer = raw_input("")
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+else:
+	print "No wood breaked."
+answer = raw_input("")
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+else:
+	print "No wood breaked."
+answer = raw_input("")
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+else:
+	print "No wood breaked."
+answer = raw_input("")
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+else:
+	print "No wood breaked."
+answer = raw_input("")
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+else:
+	print "No wood breaked."
+answer = raw_input("")
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+else:
+	print "No wood breaked."
+answer = raw_input("")
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+else:
+	print "No wood breaked."
+answer = raw_input("")
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+else:
+	print "No wood breaked."
+answer = raw_input("")
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+else:
+	print "No wood breaked."
+answer = raw_input("")
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+else:
+	print "No wood breaked."
+answer = raw_input("")
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+else:
+	print "No wood breaked."
+answer = raw_input("")
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+else:
+	print "No wood breaked."
+answer = raw_input("")
+if answer.lower() == "b":
+	print "You breaked one wood."
+	wood = wood + 1
+	print "You now have",wood
+	print "Axe breaked."
+else:
+	print "No wood breaked."
+print "Okay,now i think you have enough.Except if you breaked no wood.=)"
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
    
     
     
