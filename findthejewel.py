@@ -14,6 +14,7 @@ stone = 0
 emerald = 0
 diamond = 0
 pickaxe = 0
+cobblestone = 0
 jewelart = """                               
                                 MMMMMMMMMMMMMMM                                 
                                 MMMMMMMMMMMMMMM                                 
@@ -584,6 +585,27 @@ if answer.lower() == "/ / / @ @ @":
 else:
 	print "No pickaxe crafted.Try restarting the game."
 	exit()
+print "Time to trade."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "t":
+	print ""
+else:
+	print "Wrong keyword.Try restarting the game."
+	exit()
+answer = raw_input("Blacksmith:10 cobblestones for 1 pickaxe.Press Enter to trade.")
+clear()
+pickaxe = int(answer)
+
+if pickaxe <= 0:
+	print "You dont have a pickaxe to trade.Try restarting the game."
+	exit()
+else:
+	print "You traded 1 pickaxe for 10 cobblestones."
+	pickaxe = pickaxe - 1
+	cobblestone = cobblestone + 10
+
+	
 
 
 	
