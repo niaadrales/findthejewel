@@ -9,7 +9,12 @@ score = 0
 jewel = 0
 wood = 0
 stick = 0
-jewelart = """                  MMMMMMMMMMMMMMM                              
+plank = 0
+stone = 0
+emerald = 0
+diamond = 0
+pickaxe = 0
+jewelart = """                               
                                 MMMMMMMMMMMMMMM                                 
                                 MMMMMMMMMMMMMMM                                 
                            88888.,,,,,,,,,,,,,.D8888                            
@@ -128,11 +133,8 @@ else:
 print "Welcome,to FIND THE JEWEL!"
 time.sleep(1)
 print  " ____ ____ _  _ ____     ____ _   _ ____     ____ ____ _    _ ____ __     "
-time.sleep(1)
 print  "( ___|_  _| \( |  _ \   (_  _| )_( | ___)   (_  _| ___| \/\/ | ___|  )    "
-time.sleep(1)
-print  " )__) _)(_ )  ( )(_) )    )(  ) _ ( )__)   .-_)(  )__) )    ( )__) )(__   "
-time.sleep(1)
+print  " )__) _)(_ )  ( )(_) )    )(  ) _ ( )__)   .-_)(  )__) )    ( )__) )(__ "
 print  "(__) (____|_)\_|____/    (__)(_) (_|____)  \____)(____|__/\__|____|____)  "
 time.sleep(1)
 print jewelart
@@ -141,23 +143,15 @@ clear()
 print "Would you like easy?"
 time.sleep(1)
 print " ____    __    ___  _  _ "
-time.sleep(1)
 print "( ___)  /__\  / __)( \/ )"
-time.sleep(1)
 print " )__)  /(__)\ \__ \ \  / "
-time.sleep(1)
 print "(____)(__)(__)(___/ (__) "
-time.sleep(1)
 print "Or normal?"
 time.sleep(1)
 print " _  _  _____  ____  __  __    __    __   "
-time.sleep(1)
 print "( \( )(  _  )(  _ \(  \/  )  /__\  (  )  "
-time.sleep(1)
 print " )  (  )(_)(  )   / )    (  /(__)\  )(__ "
-time.sleep(1)
 print "(_)\_)(_____)(_)\_)(_/\/\_)(__)(__)(____)"
-time.sleep(1)
 answer = raw_input("Easy or Normal?")
 clear()
 if answer.lower() == "easy":
@@ -188,7 +182,6 @@ answer = raw_input("What has a tail,and a head,but no body.")
 clear()
 if answer.lower() == "penny":
 	print "Your answer is correct!You got the jewel!"
-	print jewelart
 	score = score + 5
 	jewel = jewel + 1 
 	print "Your current score is",score 
@@ -218,7 +211,7 @@ print "To do that you'll need 4 wood.And you'll need to craft a stone pickaxe an
 print "The wood looks like this.---> o.Or a letter o."
 print "The stick looks like this.---> /"
 print "The wooden planks looks like this.---> 0.Or number 0"
-print "The cobblestones looks like this.---> @ Or an at."
+print "The cobblestones looks like this.---> @.Or an at."
 print "To break wood type b."
 answer = raw_input("")
 clear()
@@ -354,6 +347,7 @@ print "Okay,now i think you have enough.Except if you breaked no wood.=)"
 print "To craft a crafting bench you'll need 4 woods."
 print "To craft it place 4 wood with space on each of them.Just type four o's."
 answer = raw_input("")
+clear()
 if answer.lower() == "o o o o":
 	print "You crafted a crafting bench."
 	wood = wood - 4
@@ -376,20 +370,223 @@ print "crafting bench:o o o o"
 time.sleep(1)
 raw_input("Press Enter when your done.")
 clear()
-print "Okay,use the crafing table to make 3 sticks. 1 wood makes 5 sticks.But your only gonna need 3 but that's okay."
+print "Okay,use the crafing table to make 3 sticks. 2 wood makes 5 sticks.But your only gonna need 3 but that's okay."
 keyword = raw_input("")
+clear()
 if keyword.lower() == "c":
 	print ""
 else:
 	print "Error opening the crafting bench.Wrong keyword.Try restarting the game."
 	exit()
 answer = raw_input("What would you like to craft?:")
+clear()
 if answer.lower() == "o o":
 	print "You crafted five sticks."
 	wood = wood - 2
 	stick = stick + 5
 else:
 	print "No stick crafted."
+print "Okay,now to craft wooden planks.Use the crafting table to craft 10 wooden planks.Every time you crafted 1,type c again."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "c":
+	print ""
+else:
+	print "Error opening the crafting bench.Wrong keyword.Try restarting the game."
+	exit()
+answer = raw_input("What would you like to craft?:")
+clear()
+if answer.lower() == "o":
+	print "You crafted 1 wooden plank."
+	plank = plank + 1
+	wood = wood - 1
+	print "You now have",plank
+else:
+	print "No wooden plank crafted."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "c":
+	print ""
+else:
+	print "Error opening the crafting bench.Wrong keyword.Try restarting the game."
+	exit()
+answer = raw_input("What would you like to craft?:")
+clear()
+if answer.lower() == "o":
+	print "You crafted 1 wooden plank."
+	plank = plank + 1
+	wood = wood - 1
+	print "You now have",plank
+else:
+	print "No wooden plank crafted."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "c":
+	print ""
+else:
+	print "Error opening the crafting bench.Wrong keyword.Try restarting the game."
+	exit()
+answer = raw_input("What would you like to craft?:")
+clear()
+if answer.lower() == "o":
+	print "You crafted 1 wooden plank."
+	plank = plank + 1
+	wood = wood - 1
+	print "You now have",plank
+else:
+	print "No wooden plank crafted."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "c":
+	print ""
+else:
+	print "Error opening the crafting bench.Wrong keyword.Try restarting the game."
+	exit()
+answer = raw_input("What would you like to craft?:")
+clear()
+if answer.lower() == "o":
+	print "You crafted 1 wooden plank."
+	plank = plank + 1
+	wood = wood - 1
+	print "You now have",plank
+else:
+	print "No wooden plank crafted."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "c":
+	print ""
+else:
+	print "Error opening the crafting bench.Wrong keyword.Try restarting the game."
+	exit()
+answer = raw_input("What would you like to craft?:")
+clear()
+if answer.lower() == "o":
+	print "You crafted 1 wooden plank."
+	plank = plank + 1
+	wood = wood - 1
+	print "You now have",plank
+else:
+	print "No wooden plank crafted."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "c":
+	print ""
+else:
+	print "Error opening the crafting bench.Wrong keyword.Try restarting the game."
+	exit()
+answer = raw_input("What would you like to craft?:")
+clear()
+if answer.lower() == "o":
+	print "You crafted 1 wooden plank."
+	plank = plank + 1
+	wood = wood - 1
+	print "You now have",plank
+else:
+	print "No wooden plank crafted."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "c":
+	print ""
+else:
+	print "Error opening the crafting bench.Wrong keyword.Try restarting the game."
+	exit()
+answer = raw_input("What would you like to craft?:")
+clear()
+if answer.lower() == "o":
+	print "You crafted 1 wooden plank."
+	plank = plank + 1
+	wood = wood - 1
+	print "You now have",plank
+else:
+	print "No wooden plank crafted."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "c":
+	print ""
+else:
+	print "Error opening the crafting bench.Wrong keyword.Try restarting the game."
+	exit()
+answer = raw_input("What would you like to craft?:")
+clear()
+if answer.lower() == "o":
+	print "You crafted 1 wooden plank."
+	plank = plank + 1
+	wood = wood - 1
+	print "You now have",plank
+else:
+	print "No wooden plank crafted."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "c":
+	print ""
+else:
+	print "Error opening the crafting bench.Wrong keyword.Try restarting the game."
+	exit()
+answer = raw_input("What would you like to craft?:")
+clear()
+if answer.lower() == "o":
+	print "You crafted 1 wooden plank."
+	plank = plank + 1
+	wood = wood - 1
+	print "You now have",plank
+else:
+	print "No wooden plank crafted."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "c":
+	print ""
+else:
+	print "Error opening the crafting bench.Wrong keyword.Try restarting the game."
+	exit()
+answer = raw_input("What would you like to craft?:")
+clear()
+if answer.lower() == "o":
+	print "You crafted 1 wooden plank."
+	plank = plank + 1
+	wood = wood - 1
+	print "You now have",plank
+else:
+	print "No wooden plank crafted."
+print "Now that you have wooden planks,it's time to trade!Type t to trade."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "t":
+	print ""
+else:
+	print "Wrong keyword.Error."
+	exit()
+answer = raw_input("Librarian:3 stones for 10 wooden planks.Press Enter to trade.")
+clear()
+wood = int(answer)
+
+if wood <= 0:
+	print "You dont have enough wooden planks.Try restarting the game."
+	exit()
+else:
+	print "You traded 10 wooden planks for 3 stones."
+	planks = planks - 10
+	stone = stone + 3
+print "Now,to craft a stone pickaxe.You know what to do.Use the crafting table to craft it."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "c":
+	print ""
+else:
+	print "Error opening the crafting bench.Wrong keyword.Try restarting the game."
+	exit()
+answer = raw_input("What would you like to craft?:")
+clear()
+if answer.lower() == "/ / / @ @ @":
+	print "You crafted one stone pickaxe."
+	stone = stone - 3
+	stick = stick - 3
+	pickaxe = pickaxe + 1
+else:
+	print "No pickaxe crafted.Try restarting the game."
+	exit()
+
+
+	
 
 
 
