@@ -383,6 +383,14 @@ if keyword.lower() == "c":
 else:
 	print "Error opening the crafting bench.Wrong keyword.Try restarting the game."
 	exit()
+answer = raw_input("What would you like to craft?:")
+if answer.lower() == "o o":
+	print "You crafted five sticks."
+	wood = wood - 2
+	stick = stick + 5
+else:
+	print "No stick crafted."
+
 
 
 
