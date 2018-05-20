@@ -604,7 +604,71 @@ else:
 	print "You traded 1 pickaxe for 10 cobblestones."
 	pickaxe = pickaxe - 1
 	cobblestone = cobblestone + 10
+print "Now that you have cobblestones trade them for the next villager.Time to trade.Type t to trade."
+keyword = raw_input("")
+clear()
+if answer.lower() == "t":
+	print ""
+else:
+	print "Wrong keyword.Try restarting the game."
+	exit()
+answer = raw_input("Chef:2 emeralds for 10 cobblestones.Press Enter to trade.")
+clear()
+cobblestone = int(answer)
 
+if cobblestone <= 0:
+	print "You dont have enough cobblestone to trade.Try restarting the game."
+	exit()
+else:
+	print "You traded 10 cobblestones for 2 emeralds."
+	cobblestone = cobblestone - 10
+	emerald = emerald + 2
+print "Time to trade!Again!"
+keyword = raw_input("")
+clear()
+if keyword.lower() == "t":
+	print ""
+else:
+	print "Your keyword is wrong.Try restarting the game."
+	exit()
+answer = raw_input("Miner:1 diamond for 2 emeralds.Press Enter to trade.")
+clear()
+emerald = int(answer)
+
+if emerald <= 0:
+	print "You dont have enough emeralds to trade.Try restarting the game."
+	exit()
+else:
+	print "You traded 2 emeralds for 1 diamond."
+	emerald = emerald - 2
+	diamond = diamond + 1
+print "Now,this is the final trade."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "t":
+	print ""
+else:
+	print "Wrong keyword.Try restarting the game."
+	exit()
+answer = raw_input("Witch:1 jewel for 1 diamond.Press Enter to trade.")
+clear()
+diamond = int(answer)
+
+if diamond <= 0:
+	print "You dont have any diamond to trade.Try restarting the game."
+	exit()
+else:
+	print "You traded 1 diamond for 1 jewel."
+	diamond = diamond - 1
+	jewel = jewel + 1
+	score = score + 5
+print "You got the jewel!"
+print "You current score is",score
+print "You now have",jewel + "jewel"
+
+
+
+	
 	
 
 
