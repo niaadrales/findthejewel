@@ -214,137 +214,17 @@ print "The stick looks like this.---> /"
 print "The wooden planks looks like this.---> 0.Or number 0"
 print "The cobblestones looks like this.---> @.Or an at."
 print "To break wood type b."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-else:
-	print "No wood breaked."
-print "You need to keep doing that until you have 16 woods."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-else:
-	print "No wood breaked."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-else:
-	print "No wood breaked."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-else:
-	print "No wood breaked."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-else:
-	print "No wood breaked."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-else:
-	print "No wood breaked."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-else:
-	print "No wood breaked."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-else:
-	print "No wood breaked."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-else:
-	print "No wood breaked."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-else:
-	print "No wood breaked."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-else:
-	print "No wood breaked."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-else:
-	print "No wood breaked."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-else:
-	print "No wood breaked."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-else:
-	print "No wood breaked."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-else:
-	print "No wood breaked."
-answer = raw_input("")
-clear()
-if answer.lower() == "b":
-	print "You breaked one wood."
-	wood = wood + 1
-	print "You now have",wood
-	print "Axe breaked."
-else:
-	print "No wood breaked."
-print "Okay,now i think you have enough.Except if you breaked no wood.=)"
+while wood <= 16:
+	wood_input = raw_input("")
+	clear()
+	if wood_input == "b":
+		wood = wood + 1
+		print "You now have",wood
+		if wood == 1:
+			print "You need to keep doing that until you have 16 woods."
+
+
+print "Okay,now that you have enough wood craft a crafting bench."
 print "To craft a crafting bench you'll need 4 woods."
 print "To craft it place 4 wood with space on each of them.Just type four o's."
 answer = raw_input("")
