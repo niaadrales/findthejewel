@@ -189,13 +189,14 @@ while True:
 print "Your answer is correct!You got the jewel!"
 score = score + 5
 jewel = jewel + 1
+print "Your current score is",score
 raw_input("Level 2,while you were walking,you saw a village.(Press Enter)")
 clear()
 raw_input("Inside that village,you saw 5 villagers.(Press Enter)")
 clear()
 raw_input("Every villager trades different items.(Press Enter)")
 clear()
-raw_input("The librarian 3 stones trades  pickaxe for 10 wooden planks.(Press Enter)")
+raw_input("The librarian trades  pickaxe for 10 wooden planks.(Press Enter)")
 clear()
 raw_input("The blacksmith trades 10 cobblestones for for 1 stone pickaxe.(Press Enter)")
 clear()
@@ -251,17 +252,16 @@ while True:
         craft = raw_input("")
         clear()
         if craft  == "o o":
-        stick = stick + 5
-        wood = wood - 2
-	       break
-	print "There's no crafting recipe like that.Try again."
+			break
+wood = wood - 2
+stick = stick + 5
 print "Okay,now to craft wooden planks.Use the crafting table to craft 10 wooden planks"
 while plank <= 10:
 	planks = raw_input("What would you like to craft?:")
 	clear()
 	if planks == "o":
 		plank = plank + 1
-		print "You now have",plank + "plank"
+		print "You now have",plank 
 		if plank == 1:
 			print "You need to keep doing that until you have 10 wooden planks."
 print "Now that you have wooden planks,it's time to trade!Type t to trade."
@@ -280,11 +280,11 @@ while True:
 	pick = raw_input("What would you like to craft?:")
 	clear()
 	if pick == "/ / / @ @ @":
-	pickaxe = pickaxe + 1
-	stick = stick - 3
-	stone = stone - 3
 		break
 	print "There's no crafting recipe like that.Try again."
+pickaxe = pickaxe + 1
+stick = stick - 3
+stone = stone - 3
 print "Time to trade.Type t to trade."
 while True:
 	keyword = raw_input("")
@@ -333,7 +333,9 @@ jewel = jewel + 1
 score = score + 5
 print "You got the jewel!"
 print "You current score is",score
-print "You now have",jewel + "jewel"
+print "You now have",jewel 
+aa
+
 
 
 
