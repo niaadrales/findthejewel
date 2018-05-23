@@ -249,7 +249,6 @@ clear()
 print "Okay,your gonna craft a stick using the crafting bench.2 woods makes 5 sticks but you only need 3,but that's okay."
 while True:
         craft = raw_input("")
-        clear()
         if craft  == "o o":
         stick = stick + 5
         wood = wood - 2
@@ -258,7 +257,6 @@ while True:
 print "Okay,now to craft wooden planks.Use the crafting table to craft 10 wooden planks"
 while plank <= 10:
 	planks = raw_input("What would you like to craft?:")
-	clear()
 	if planks == "o":
 		plank = plank + 1
 		print "You now have",plank + "plank"
@@ -270,67 +268,103 @@ while True:
 	clear()
 	if keyword.lower() == "t":
 		break 
-        print "You typed the wrong keyword.Try again."
 answer = raw_input("Librarian:3 stones for 10 wooden planks.Press Enter to trade.")
 clear()
-stone = stone + 3
-plank = plank - 10
 print "Now,to craft a stone pickaxe.You know what to do.Use the crafting table to craft it."
-while True:
-	pick = raw_input("What would you like to craft?:")
-	clear()
-	if pick == "/ / / @ @ @":
-	pickaxe = pickaxe + 1
-	stick = stick - 3
+keyword = raw_input("")
+clear()
+if keyword.lower() == "c":
+	print ""
+else:
+	print "Error opening the crafting bench.Wrong keyword.Try restarting the game."
+	exit()
+answer = raw_input("What would you like to craft?:")
+clear()
+if answer.lower() == "/ / / @ @ @":
+	print "You crafted one stone pickaxe."
 	stone = stone - 3
-		break
-	print "There's no crafting recipe like that.Try again."
-print "Time to trade.Type t to trade."
-while True:
-	keyword = raw_input("")
-	clear()
-	if keyword == "t":
-		break
-	print "You type the wrong keyword.Try again."
+	stick = stick - 3
+	pickaxe = pickaxe + 1
+else:
+	print "No pickaxe crafted.Try restarting the game."
+	exit()
+print "Time to trade."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "t":
+	print ""
+else:
+	print "Wrong keyword.Try restarting the game."
+	exit()
 answer = raw_input("Blacksmith:10 cobblestones for 1 pickaxe.Press Enter to trade.")
 clear()
-print "You traded 1 pickaxe for 10 cobblestones."
-pickaxe = pickaxe - 1
-cobblestone = cobblestone + 10
+pickaxe = int(answer)
+
+if pickaxe <= 0:
+	print "You dont have a pickaxe to trade.Try restarting the game."
+	exit()
+else:
+	print "You traded 1 pickaxe for 10 cobblestones."
+	pickaxe = pickaxe - 1
+	cobblestone = cobblestone + 10
 print "Now that you have cobblestones trade them for the next villager.Time to trade.Type t to trade."
-while True:
-	keyword2 = raw_input("")
-	clear()
-	if keyword2 == "t":
-		break
-	print "You typed the wrong keyword.Try again."
+keyword = raw_input("")
+clear()
+if answer.lower() == "t":
+	print ""
+else:
+	print "Wrong keyword.Try restarting the game."
+	exit()
 answer = raw_input("Chef:2 emeralds for 10 cobblestones.Press Enter to trade.")
 clear()
-print "You traded 10 cobblestones for 2 emeralds."
-cobblestone = cobblestone - 10
-emerald = emerald + 2
-print "Time to trade!Again!Type t to trade."
-while True:
-	keyword3 = raw_input("")
-	if keyword3 == "t":
-		break
-	print "Wrong keyword.Try again."
+cobblestone = int(answer)
+
+if cobblestone <= 0:
+	print "You dont have enough cobblestone to trade.Try restarting the game."
+	exit()
+else:
+	print "You traded 10 cobblestones for 2 emeralds."
+	cobblestone = cobblestone - 10
+	emerald = emerald + 2
+print "Time to trade!Again!"
+keyword = raw_input("")
+clear()
+if keyword.lower() == "t":
+	print ""
+else:
+	print "Your keyword is wrong.Try restarting the game."
+	exit()
 answer = raw_input("Miner:1 diamond for 2 emeralds.Press Enter to trade.")
 clear()
-print "You traded 2 emeralds for 1 diamond."
-emerald = emerald - 2
-diamond = diamond + 1
-print "Now,this is the final trade.Type t to trade."
-while True:
-	keyword4 = raw_input("")
-	if keyword4 == "t":
-		break
-	print "Wrong keyword.Try again."
+emerald = int(answer)
+
+if emerald <= 0:
+	print "You dont have enough emeralds to trade.Try restarting the game."
+	exit()
+else:
+	print "You traded 2 emeralds for 1 diamond."
+	emerald = emerald - 2
+	diamond = diamond + 1
+print "Now,this is the final trade."
+keyword = raw_input("")
+clear()
+if keyword.lower() == "t":
+	print ""
+else:
+	print "Wrong keyword.Try restarting the game."
+	exit()
 answer = raw_input("Witch:1 jewel for 1 diamond.Press Enter to trade.")
 clear()
-diamond = diamond - 1
-jewel = jewel + 1
-score = score + 5
+diamond = int(answer)
+
+if diamond <= 0:
+	print "You dont have any diamond to trade.Try restarting the game."
+	exit()
+else:
+	print "You traded 1 diamond for 1 jewel."
+	diamond = diamond - 1
+	jewel = jewel + 1
+	score = score + 5
 print "You got the jewel!"
 print "You current score is",score
 print "You now have",jewel + "jewel"
