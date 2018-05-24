@@ -15,6 +15,7 @@ emerald = 0
 diamond = 0
 pickaxe = 0
 cobblestone = 0
+point = 0
 jewelart = """                               
                                 MMMMMMMMMMMMMMM                                 
                                 MMMMMMMMMMMMMMM                                 
@@ -342,7 +343,7 @@ answer = raw_input("Later...you were celebrating because you got 2 jewels.Well,n
 clear()
 answer = raw_input("It got snatched by the snather!The snather has 2 jewels.You need to get it before it's too late.(Press Enter)")
 clear()
-answer = raw_input("Too get it,you need to pass 3 puzzles.The snatcher dealed with you that if you pass his puzzle,you will get the two jewels.(Press Enter)")
+answer = raw_input("Too get it,you need to pass 3 puzzles.The snatcher dealed with you that if you pass his puzzle,you will get the two jewels.Every puzzle has points.You need to give it to the snather,and the 2 jewels will be yours.(Press Enter)")
 clear()
 answer = raw_input("First one is the wizard riddles.To pass that puzzle,you need to answer some riddles.(Press Enter)")
 clear()
@@ -350,6 +351,30 @@ answer = raw_input("Second one is minecraft madness.To pass that puzzle,you will
 clear()
 answer = raw_input("Third one is Boss Math Battle.You will be battling Boss Math.To pass that puzzle,you need to answer some math questions.")
 clear()
+answer = raw_input("Press Enter to start the first puzzle.")
+clear()
+while True:
+	riddle = raw_input("First riddle:What kind of table is good for you to eat?")
+	clear()
+	if riddle.lower() == "vegetable":
+		break
+	print "Your answer is wrong try again."
+print "Your answer is correct!Now,for the second riddle."
+while True:
+	riddle2 = raw_input("Second riddle:What season does humpty-dumpty hate the most?")
+	clear()
+	if riddle2.lower() == "the fall":
+		break
+	print "Your answer is wrong,try again."
+print "Your answer is correct!Now,for the final riddle."
+while True:
+	answer = raw_input("Final riddle:What is the sun's favourite day of the week?")
+	clear()
+	if answer.lower() == "sunday":
+		break
+	print "Your answer is wrong,try again."
+print "Your answer is correct!You got 1 point."
+point = point + 1
 
 
 
