@@ -348,6 +348,30 @@ answer = raw_input("Second one is minecraft madness.To pass that puzzle,you will
 clear()
 answer = raw_input("Third one is Boss Math Battle.You will be battling Boss Math.To pass that puzzle,you need to answer some math questions.")
 clear()
+answer = raw_input("Press Enter to start the first puzzle.")
+clear()
+while True:
+	riddle = raw_input("First riddle:What kind of table is good for you to eat?")
+	clear()
+	if riddle.lower() == "vegetable":
+		break
+	print "Your answer is wrong try again."
+print "Your answer is correct!Now,for the second riddle."
+while True:
+	riddle2 = raw_input("Second riddle:What season does humpty-dumpty hate the most?")
+	clear()
+	if riddle2.lower() == "the fall":
+		break
+	print "Your answer is wrong,try again."
+print "Your answer is correct!Now,for the final riddle."
+while True:
+	answer = raw_input("Final riddle:What is the sun's favourite day of the week?")
+	clear()
+	if answer.lower() == "sunday":
+		break
+	print "Your answer is wrong,try again."
+print "Your answer is correct!You got 1 point."
+point = point + 1
 
 
 
