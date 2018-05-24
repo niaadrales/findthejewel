@@ -26,6 +26,8 @@ wpick = 0
 ipick = 0
 dpick = 0
 spick = 0
+siron = 0
+obsidian = 0
 jewelart = """                               
                                 MMMMMMMMMMMMMMM                                 
                                 MMMMMMMMMMMMMMM                                 
@@ -120,7 +122,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:
 ................................................................................
 ........................ ............... ............. ....... ................."""
 
-
+time.sleep(1)
 answer = raw_input("Please type your name here.---> ")
 clear()
 if answer.lower() == "nia":
@@ -175,6 +177,8 @@ print "Printing texts....."
 time.sleep(2)
 print "Analizing answers....."
 time.sleep(2)
+print "Loading game....."
+time.sleep(2)
 print "Done!"
 time.sleep(2)
 raw_input("Press Enter to start the story.")
@@ -224,6 +228,7 @@ print "The wood looks like this.---> o.Or a letter o."
 print "The stick looks like this.---> /"
 print "The wooden planks looks like this.---> 0.Or number 0"
 answer = raw_input("The cobblestones looks like this.---> @.Or an at.(Press Enter)")
+clear()
 print "To break wood type b."
 while wood <= 15:
 	wood_input = raw_input("")
@@ -240,6 +245,7 @@ print "To craft a crafting bench you'll need 4 woods."
 print "To craft it place 4 wood with space on each of them.Just type four o's."
 while True:
         bench = raw_input("")
+        clear()
         if bench == "o o o o":
                break
         print "There's no crafting recipe like that.Try again."
@@ -359,7 +365,7 @@ answer = raw_input("First one is the wizard riddles.To pass that puzzle,you need
 clear()
 answer = raw_input("Second one is minecraft madness.To pass that puzzle,you will need to do the same thing on level 2.Well different i guess.I'ts just like the one you did on level 2.(Press Enter)")
 clear()
-answer = raw_input("Third one is Boss Math Battle.You will be battling Boss Math.To pass that puzzle,you need to answer some math questions.")
+answer = raw_input("Third one is Boss Math Battle.You will be battling Boss Math.To pass that puzzle,you need to answer some math questions.(Press Enter)")
 clear()
 answer = raw_input("Press Enter to start the first puzzle.")
 clear()
@@ -393,7 +399,7 @@ answer = raw_input("You need to craft a diamond pickaxe for that though.(Press E
 clear()
 answer = raw_input("There is a furnace,a crafting table,3 iron ore,some trees,3 stones,and 3 diamond ores.(Press Enter)")
 clear()
-answer = raw_input("Now,to start a puzzle,break some wood.(Press Enter)")
+answer = raw_input("Now,to start the puzzle,break some wood.(Press Enter)")
 clear()
 log = int(log)
 
@@ -456,8 +462,102 @@ while True:
 spick = spick + 1
 stone2 = stone2 - 3
 stick2 = stick2 - 3
+wpick = wpick - 1
+print "Wooden pickaxe breaked."
 print "Okay,now that you have a stone pickaxe,break some iron ore."
 print "To break iron ore,type mi."
+iron = int(iron)
+
+if iron <= 2:
+	irons = raw_input("")
+	clear()
+	if irons == "mi":
+		iron = iron + 1
+	if iron <= 1:
+		print "You need 2 more."
+spick = spick - 1
+print "Stone Pickaxe breaked."
+print "Okay,to smelt it,use sticks as coal."
+print "To smelt iron,type si"
+siron = int(sirons)
+
+while siron <= 2:
+	sirons = raw_input("")
+	clear()
+	if answer.lower() == "si":
+		siron = siron + 1
+		iron = iron - 1
+		print "You now have",siron
+	if siron <= 1:
+		print "You need 2 more."
+print "Okay,now craft sticks.Type o o."
+while True:
+	answer = raw_input("What would you like to craft?: ")
+	clear()
+	if answer.lower() == "o o":
+		break
+	print "There's no crafting recipe like that,try again."
+stick2 = stick2 + 5
+print "Now craft an iron pickaxe.To craft an iron pickaxe,type / / / * * *(With space)"
+while True:
+	answer = raw_input("What would you like to craft?: ")
+	clear()
+	if answer.lower() == "/ / / * * *":
+		break
+	print "There's no crafting recipe like that,try again."
+ipick = ipick + 1
+stick2 = stick2 - 3
+siron = siron - 3
+print "To mine a diamond ore,type md."
+diamond2 = int(answer)
+
+while diamond2 <= 2:
+	answer = raw_input("")
+	clear()
+	if answer.lower() == "md":
+		diamond2 = diamond2 + 1
+	if diamond2 <= 1:
+		print "You need 2 more."
+print "Iron Pickaxe breaked."
+ipick = ipick - 1
+print "Okay,now craft a stick."
+while True:
+	answer = raw_input("What would you like to craft?: ")
+	clear()
+	if answer.lower() == "o o":
+		break
+	print "There's no crafting recipe like that,try again."
+stick2 = stick2 + 5
+print "Now craft a diamond pickaxe.To craft one,type / / / $ $ $(With space)"
+while True:
+	answer = raw_input("What would you like to craft?: ")
+	clear()
+	if answer.lower() == "/ / / $ $ $":
+		break
+	print "There's no crafting recipe like that,try again."
+stick2 = stick2 - 3
+diamond2 = diamond2 - 3
+dpick = dpick + 1
+print "Okay,be ready,this is the final one.The diamond will not last with more than 3 obsidian."
+print "Your only gonna be able to break 2 obsidians.To break obsidians type mo."
+obsidian = int(answer)
+
+while obsidian <= 1:
+	answer = raw_input("")
+	clear()
+	if answer.lower() == "mo":
+		obsidian = obsidian + 1
+	if obsidian <= 1:
+		print "Keep doing it!"
+dpick = dpick - 1
+print "Diamond pickaxe breaked"
+print "You finished the 2nd level!That was the hardest one though."
+point = point + 1
+print "You now got",point
+
+
+
+
 
 
 
