@@ -16,6 +16,16 @@ diamond = 0
 pickaxe = 0
 cobblestone = 0
 point = 0
+log = 0
+stone2 = 0
+cobblestone2 = 0
+diamond2 = 0
+iron = 0
+stick2 = 0
+wpick = 0
+ipick = 0
+dpick = 0
+spick = 0
 jewelart = """                               
                                 MMMMMMMMMMMMMMM                                 
                                 MMMMMMMMMMMMMMM                                 
@@ -213,7 +223,7 @@ print "To do that you'll need 4 wood.And you'll need to craft a stone pickaxe an
 print "The wood looks like this.---> o.Or a letter o."
 print "The stick looks like this.---> /"
 print "The wooden planks looks like this.---> 0.Or number 0"
-print "The cobblestones looks like this.---> @.Or an at."
+answer = raw_input("The cobblestones looks like this.---> @.Or an at.(Press Enter)")
 print "To break wood type b."
 while wood <= 15:
 	wood_input = raw_input("")
@@ -257,7 +267,7 @@ while True:
 wood = wood - 2
 stick = stick + 5
 print "Okay,now to craft wooden planks.Use the crafting table to craft 10 wooden planks"
-while plank <= 10:
+while plank <= 9:
 	planks = raw_input("What would you like to craft?:")
 	clear()
 	if planks == "o":
@@ -375,6 +385,83 @@ while True:
 	print "Your answer is wrong,try again."
 print "Your answer is correct!You got 1 point."
 point = point + 1
+answer = raw_input("Press enter to start the 2nd puzzle.")
+clear()
+answer = raw_input("You were locked up in a room that is tightly covered with obsidian.(Press Enter)")
+clear()
+answer = raw_input("You need to craft a diamond pickaxe for that though.(Press Enter)")
+clear()
+answer = raw_input("There is a furnace,a crafting table,3 iron ore,some trees,3 stones,and 3 diamond ores.(Press Enter)")
+clear()
+answer = raw_input("Now,to start a puzzle,break some wood.(Press Enter)")
+clear()
+log = int(log)
+
+while log <= 12:
+	logs = raw_input("Type b to break wood.")
+	clear()
+	if logs.lower() == "b":
+		log = log + 1
+	if log <= 1:
+		print "You need 12 more."
+print "Okay,now craft 3 sticks.Type this to craft it.---> o o."
+print "2 woods,makes 5 sticks."
+while True:
+	sti = raw_input("What would you like to craft?:")
+	clear()
+	if sti.lower() == "o o":
+		break
+	print "There's no crafting recipe like that,try again."
+stick2 = stick2 + 5
+log = log - 2
+print "Okay,now that you have enough things,craft a wooden pickaxe."
+print "To craft a wooden pickaxe,type this.---> / / / o o o(With space)"
+while True:
+	picka = raw_input("What would you like to craft?:")
+	clear()
+	if picka == "/ / / o o o":
+		break
+	print "There's no crafting recipe like that.Try again."
+wpick = wpick + 1
+log = log - 3
+stick2 = stick2 - 3
+print "Okay,now that you have a wooden pickaxe,break some stone."
+print "To break stone type m."
+stone2 = int(stone2)
+
+while stone2 <= 2:
+	stones = raw_input("")
+	clear()
+	if stones.lower() == "m":
+		stone2 = stone2 + 1
+	if stone2 <= 1:
+		print "You need 2 more."
+print "Now,craft sticks again."
+while True:
+	stic = raw_input("What would you like to craft?:")
+	clear()
+	if stic.lower() == "o o":
+		break
+	print "There's no crafting recipe like that,try again."
+stick2 = stick2 + 5
+log = log - 2
+print "Now that you have enough things,craft a stone pickaxe."
+print "To craft it,type this.---> / / / @ @ @"
+while True:
+	spicka = raw_input("What would you like to craft?:")
+	clear()
+	if spicka == "/ / / @ @ @":
+		break
+	print "There's no recipe like that,try again."
+spick = spick + 1
+stone2 = stone2 - 3
+stick2 = stick2 - 3
+print "Okay,now that you have a stone pickaxe,break some iron ore."
+print "To break iron ore,type mi."
+
+
+
+
 
 
 
