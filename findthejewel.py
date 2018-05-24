@@ -312,6 +312,7 @@ emerald = emerald + 2
 print "Time to trade!Again!Type t to trade."
 while True:
 	keyword3 = raw_input("")
+	clear()
 	if keyword3 == "t":
 		break
 	print "Wrong keyword.Try again."
@@ -323,6 +324,7 @@ diamond = diamond + 1
 print "Now,this is the final trade.Type t to trade."
 while True:
 	keyword4 = raw_input("")
+	clear()
 	if keyword4 == "t":
 		break
 	print "Wrong keyword.Try again."
@@ -334,7 +336,22 @@ score = score + 5
 print "You got the jewel!"
 print "You current score is",score
 print "You now have",jewel 
-aa
+answer = raw_input("Press Enter to start level 3.")
+clear()
+answer = raw_input("Later...you were celebrating because you got 2 jewels.Well,not this time.(Press Enter)")
+clear()
+answer = raw_input("It got snatched by the snather!The snather has 2 jewels.You need to get it before it's too late.(Press Enter)")
+clear()
+answer = raw_input("Too get it,you need to pass 3 puzzles.The snatcher dealed with you that if you pass his puzzle,you will get the two jewels.(Press Enter)")
+clear()
+answer = raw_input("First one is the wizard riddles.To pass that puzzle,you need to answer some riddles.(Press Enter)")
+clear()
+answer = raw_input("Second one is minecraft madness.To pass that puzzle,you will need to do the same thing on level 2.Well different i guess.I'ts just like the one you did on level 2.(Press Enter)")
+clear()
+answer = raw_input("Third one is Boss Math Battle.You will be battling Boss Math.To pass that puzzle,you need to answer some math questions.")
+clear()
+
+
 
 
 
