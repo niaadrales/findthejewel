@@ -1,10 +1,17 @@
 import os
 import time
-
 def clear():
 	os.system("clear")
 	print """
 """
+def waitfor(word,output):
+	
+	while True:
+		answer = raw_input("")
+		clear()
+		if answer.lower() == word:
+			break
+		print output
 score = 0
 jewel = 0
 wood = 0
@@ -121,6 +128,114 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:
 .............................................................. .................
 ................................................................................
 ........................ ............... ............. ....... ................."""
+instagram = """NMMMMMMMMMMMMMMMMMMMMMN         
+      7MMMMMMMMMMMMMMMMMMMMMMMMM?       
+     $MMMMMMMMMMMMMMMMMMMMMM   MM7      
+     MMMMMMMMMMMMMMMMMMMMMMM   MMM      
+    +MMMMMMMMMM7       .MMMMMMMMMM7     
+    ?MMMMMMMM:           ~MMMMMMMM8     
+    ?MMMMMMM.   .MMMMM.    MMMMMMM8     
+    ?MMMMMM$   MMMMMMMMM   OMMMMMM8     
+    ?MMMMMM   :MMMMMMMMM.   MMMMMM8     
+    ?MMMMMM.  =MMMMMMMMM~   MMMMMM8     
+    ?MMMMMM+   MMMMMMMMM   +MMMMMM8     
+    ?MMMMMMM    NMMMMMD    MMMMMMM8     
+    ?MMMMMMMM.            MMMMMMMM8     
+    +MMMMMMMMMM         MMMMMMMMMMO     
+    .MMMMMMMMMMMMMMMMMMMMMMMMMMMMM      
+     MMMMMMMMMMMMMMMMMMMMMMMMMMMMM      
+      MMMMMMMMMMMMMMMMMMMMMMMMMMM       
+        MMMMMMMMMMMMMMMMMMMMMMM         """
+facebook = """..MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM...
+.MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM,.
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM 
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM8
+MMMMMMMMMMMMMMMMMMMMMMMM .......MMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMM..........MMMMMMMM
+MMMMMMMMMMMMMMMMMMMMM...........MMMMMMMM
+MMMMMMMMMMMMMMMMMMMM............MMMMMMMM
+MMMMMMMMMMMMMMMMMMMM......MMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMM......MMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMM......MMMMMMMMMMMMMM
+MMMMMMMMMMMMMMM.................MMMMMMMM
+MMMMMMMMMMMMMMM.................MMMMMMMM
+MMMMMMMMMMMMMMM.................MMMMMMMM
+MMMMMMMMMMMMMMM.................MMMMMMMM
+MMMMMMMMMMMMMMMMMMMM......MMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMM......MMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMM......MMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMM......MMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMM......MMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMM... ..MMMMMMMMMMMMMD
+MMMMMMMMMMMMMMMMMMMM......MMMMMMMMMMMMM.
+.MMMMMMMMMMMMMMMMMMM......MMMMMMMMMMMM=.
+. MMMMMMMMMMMMMMMMMM .....MMMMMMMMMMM ..
+.... ?MMMMMMMMMMMMMM......MMMMMMM$  ...."""
+snapchat = """...... ......+MMMMMMMMMMM+..............
+ .....  ..MMMMMMMMMMMMMMMMMMM...........
+ ..  ..DMMMMMMMMMMMMMMMMMMMMMMMM........
+ ....=MMMMMMMMMMMMMMMMMMMMMMMMMMM?......
+... MMMMMMMMMMMMMD. .ZMMMMMMMMMMMMM.....
+ ..MMMMMMMMMMM:..........MMMMMMMMMMM....
+ .MMMMMMMMMMM.............MMMMMMMMMMM ..
+.MMMMMMMMMMM              .MMMMMMMMMMM .
+:MMMMMMMMMMM               MMMMMMMMMMM:.
+MMMMMMMMMMMM               MMMMMMMMMMMM.
+MMMMMMMMMMMM               MMMMMMMMMMMM 
+MMMMMMMMM..                   MMMMMMMMM7
+MMMMMMMMMMZ                 $MMMMMMMMMMM
+MMMMMMMMMMMM               MMMMMMMMMMMM7
+MMMMMMMMMMM                 MMMMMMMMMMM 
+MMMMMMMMM8.  ..   ...        ?MMMMMMMMM.
+:MMMMM7 ...       .             ?MMMMM: 
+.MMMMM+ ...............  .      +MMMMM  
+  MMMMMMMM.  . .  ...        MMMMMMMM   
+...MMMMMMMMMMMM         MMMMMMMMMMMM.   
+  ..MMMMMMMMMMMMMN, .MMMMMMMMMMMMMM.    
+  ...+MMMMMMMMMMMMMMMMMMMMMMMMMMM7      
+.......NMMMMMMMMMMMMMMMMMMMMMMMM.. ..  .
+  ........MMMMMMMMMMMMMMMMMMM.          
+  .........  =MMMMMMMMMMM+     ..    . .
+  .........                             """
+youtube = """:78MMMMMMMMMMMMMMMMMMMD$=        
+  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   
+.MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM. 
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM 
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.
+MMMMMMMMMMMMMM   MMMMMMMMMMMMMMMMMMMMMM:
+MMMMMMMMMMMMMM      MMMMMMMMMMMMMMMMMMM7
+MMMMMMMMMMMMMM        .MMMMMMMMMMMMMMMMN
+MMMMMMMMMMMMMM           .MMMMMMMMMMMMMM
+MMMMMMMMMMMMMM           MMMMMMMMMMMMMMM
+MMMMMMMMMMMMMM        MMMMMMMMMMMMMMMMMN
+MMMMMMMMMMMMMM    .MMMMMMMMMMMMMMMMMMMM7
+MMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMMMMMMM:
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM 
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM 
+=MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM+ 
+ +MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM?  
+     ~DMMMMMMMMMMMMMMMMMMMMMMMMMD~ .    """
+vine = """ MMMMMMMMMM        
+                    ,MMMMMMMMMMMM.      
+                    MMMMMMMMMMMMMM      
+    .MMMMM7        MMMMMM   ?MMMMM.     
+     MMMMMM        MMMMM.    MMMMM=     
+     MMMMMM        MMMMM     MMMMM.     
+     .MMMMM.       MMMMMD   ,MMMMM.     
+      MMMMMM       NMMMMM   :MMMMM      
+      MMMMMM        MMMMMM    .  .      
+       MMMMMO        MMMMMMM            
+       MMMMMM         MMMMMMMMMMMM=     
+        MMMMMM         .MMMMMMMMMM+     
+        ZMMMMM~          MMMMMMMMO      
+         MMMMMM         MMMMMM          
+          MMMMMM       MMMMMM           
+          .MMMMMM.   ,MMMMMM            
+           .MMMMMMM MMMMMMZ             
+             MMMMMMMMMMMM.              
+              MMMMMMMMMM                
+                MMMMMM                  
+                                   """
 
 time.sleep(1)
 answer = raw_input("Please type your name here.---> ")
@@ -195,12 +310,8 @@ raw_input("Level 1,there's a jewel in that house!But it's guarded by the wizard.
 clear()
 raw_input("You can only get it if you answered his riddle.(Press Enter)")
 clear()
-while True:
-	penny = raw_input("What has a tail and a head and has no body?")
-	clear()
-	if penny.lower() == "penny":
-		break
-	print "Your answer is wrong.Try again."
+print "What has a tail and a head but no body?"
+waitfor("penny","Your answer is wrong,try again.")
 print "Your answer is correct!You got the jewel!"
 score = score + 5
 jewel = jewel + 1
@@ -244,12 +355,7 @@ while wood <= 15:
 print "Okay,now that you have enough wood craft a crafting bench."
 print "To craft a crafting bench you'll need 4 woods."
 print "To craft it place 4 wood with space on each of them.Just type four o's."
-while True:
-        bench = raw_input("")
-        clear()
-        if bench == "o o o o":
-               break
-        print "There's no crafting recipe like that.Try again."
+
 print "You crafted a crafting bench.But the crafting bench will only show up if needed."
 print "But,you also need to learn how to craft things."
 raw_input("Press Enter to show how to craft things in Level 2.")
@@ -266,11 +372,7 @@ time.sleep(1)
 raw_input("Press Enter when your done.")
 clear()
 print "Okay,your gonna craft a stick using the crafting bench.2 woods makes 5 sticks but you only need 3,but that's okay."
-while True:
-        craft = raw_input("")
-        clear()
-        if craft  == "o o":
-			break
+waitfor("o o","There's no crafting recipe like that,try again.")
 wood = wood - 2
 stick = stick + 5
 print "Okay,now to craft wooden planks.Use the crafting table to craft 10 wooden planks"
@@ -283,69 +385,39 @@ while plank <= 9:
 		if plank == 1:
 			print "You need to keep doing that until you have 10 wooden planks."
 print "Now that you have wooden planks,it's time to trade!Type t to trade."
-while True:
-	keyword = raw_input("")
-	clear()
-	if keyword.lower() == "t":
-		break 
-        print "You typed the wrong keyword.Try again."
+waitfor("t","You typed the wrong keyword,try again.")
 answer = raw_input("Librarian:3 stones for 10 wooden planks.Press Enter to trade.")
 clear()
 stone = stone + 3
 plank = plank - 10
 print "Now,to craft a stone pickaxe.You know what to do.Use the crafting table to craft it."
-while True:
-	pick = raw_input("What would you like to craft?:")
-	clear()
-	if pick == "/ / / @ @ @":
-		break
-	print "There's no crafting recipe like that.Try again."
+waitfor("/ / / @ @ @","There's no crafting recipe like that,try again.")
 pickaxe = pickaxe + 1
 stick = stick - 3
 stone = stone - 3
 print "Time to trade.Type t to trade."
-while True:
-	keyword = raw_input("")
-	clear()
-	if keyword == "t":
-		break
-	print "You type the wrong keyword.Try again."
+waitfor("t","You typed the wrong keyword,try again.")
 answer = raw_input("Blacksmith:10 cobblestones for 1 pickaxe.Press Enter to trade.")
 clear()
 print "You traded 1 pickaxe for 10 cobblestones."
 pickaxe = pickaxe - 1
 cobblestone = cobblestone + 10
 print "Now that you have cobblestones trade them for the next villager.Time to trade.Type t to trade."
-while True:
-	keyword2 = raw_input("")
-	clear()
-	if keyword2 == "t":
-		break
-	print "You typed the wrong keyword.Try again."
+waitfor("t","You typed the wrong keyword,try again.")
 answer = raw_input("Chef:2 emeralds for 10 cobblestones.Press Enter to trade.")
 clear()
 print "You traded 10 cobblestones for 2 emeralds."
 cobblestone = cobblestone - 10
 emerald = emerald + 2
 print "Time to trade!Again!Type t to trade."
-while True:
-	keyword3 = raw_input("")
-	clear()
-	if keyword3 == "t":
-		break
-	print "Wrong keyword.Try again."
+waitfor("t","You typed the wrong keyword,try again.")
 answer = raw_input("Miner:1 diamond for 2 emeralds.Press Enter to trade.")
 clear()
 print "You traded 2 emeralds for 1 diamond."
 emerald = emerald - 2
 diamond = diamond + 1
 print "Now,this is the final trade.Type t to trade."
-while True:
-	keyword4 = raw_input("")
-	clear()
-	if keyword4 == "t":
-		break
-	print "Wrong keyword.Try again."
+waitfor("t","You typed the wrong keyword,try again.")
 answer = raw_input("Witch:1 jewel for 1 diamond.Press Enter to trade.")
 clear()
 diamond = diamond - 1
@@ -353,49 +425,31 @@ jewel = jewel + 1
 score = score + 5
 print "You got the jewel!"
 print "You current score is",score
-
-print "You now have",jewel + "jewel"
-
+print "You now have",jewel 
 answer = raw_input("Press Enter to start level 3.")
 clear()
 answer = raw_input("Later...you were celebrating because you got 2 jewels.Well,not this time.(Press Enter)")
 clear()
 answer = raw_input("It got snatched by the snather!The snather has 2 jewels.You need to get it before it's too late.(Press Enter)")
 clear()
-
-answer = raw_input("Too get it,you need to pass 3 puzzles.The snatcher dealed with you that if you pass his puzzle,you will get the two jewels.Every puzzle has points.You need to give it to the snather,and the 2 jewels will be yours.(Press Enter)")
-
+answer = raw_input("To get it,you need to pass 3 puzzles.The snatcher dealed with you that if you pass his puzzle,you will get the two jewels.Every puzzle has points.You need to give it to the snather,and the 2 jewels will be yours.(Press Enter)")
 clear()
 answer = raw_input("First one is the wizard riddles.To pass that puzzle,you need to answer some riddles.(Press Enter)")
 clear()
 answer = raw_input("Second one is minecraft madness.To pass that puzzle,you will need to do the same thing on level 2.Well different i guess.I'ts just like the one you did on level 2.(Press Enter)")
 clear()
-
 answer = raw_input("Third one is Boss Math Battle.You will be battling Boss Math.To pass that puzzle,you need to answer some math questions.(Press Enter)")
-
 clear()
 answer = raw_input("Press Enter to start the first puzzle.")
 clear()
-while True:
-	riddle = raw_input("First riddle:What kind of table is good for you to eat?")
-	clear()
-	if riddle.lower() == "vegetable":
-		break
-	print "Your answer is wrong try again."
+print "First riddle:What kind of table is good for you to eat?"
+waitfor("vegetable","Your answer is wrong,try again.")
 print "Your answer is correct!Now,for the second riddle."
-while True:
-	riddle2 = raw_input("Second riddle:What season does humpty-dumpty hate the most?")
-	clear()
-	if riddle2.lower() == "the fall":
-		break
-	print "Your answer is wrong,try again."
+print "Second Riddle:What season does humpty-dumpty hate the most?"
+waitfor("the fall","Your answer is wrong,try again.")
 print "Your answer is correct!Now,for the final riddle."
-while True:
-	answer = raw_input("Final riddle:What is the sun's favourite day of the week?")
-	clear()
-	if answer.lower() == "sunday":
-		break
-	print "Your answer is wrong,try again."
+print "Final Riddle:What is the sun's favourite day of the week?"
+waitfor("sunday","Your answer is wrong,try again.")
 print "Your answer is correct!You got 1 point."
 point = point + 1
 answer = raw_input("Press enter to start the 2nd puzzle.")
@@ -429,12 +483,7 @@ stick2 = stick2 + 5
 log = log - 2
 print "Okay,now that you have enough things,craft a wooden pickaxe."
 print "To craft a wooden pickaxe,type this.---> / / / o o o(With space)"
-while True:
-	picka = raw_input("What would you like to craft?:")
-	clear()
-	if picka == "/ / / o o o":
-		break
-	print "There's no crafting recipe like that.Try again."
+waitfor("/ / / o o o","There's no crafting recipe like that,try again.")
 wpick = wpick + 1
 log = log - 3
 stick2 = stick2 - 3
@@ -450,22 +499,12 @@ while stone2 <= 2:
 	if stone2 <= 1:
 		print "You need 2 more."
 print "Now,craft sticks again."
-while True:
-	stic = raw_input("What would you like to craft?:")
-	clear()
-	if stic.lower() == "o o":
-		break
-	print "There's no crafting recipe like that,try again."
+waitfor("o o","There's no crafting recipe like that,try again.")
 stick2 = stick2 + 5
 log = log - 2
 print "Now that you have enough things,craft a stone pickaxe."
 print "To craft it,type this.---> / / / @ @ @"
-while True:
-	spicka = raw_input("What would you like to craft?:")
-	clear()
-	if spicka == "/ / / @ @ @":
-		break
-	print "There's no recipe like that,try again."
+waitfor("/ / / @ @ @","There's no crafting recipe like that,try again.")
 spick = spick + 1
 stone2 = stone2 - 3
 stick2 = stick2 - 3
@@ -498,20 +537,10 @@ while siron <= 2:
 	if siron <= 1:
 		print "You need 2 more."
 print "Okay,now craft sticks.Type o o."
-while True:
-	answer = raw_input("What would you like to craft?: ")
-	clear()
-	if answer.lower() == "o o":
-		break
-	print "There's no crafting recipe like that,try again."
+waitfor("o o","There's no crafting recipe like that,try again.")
 stick2 = stick2 + 5
 print "Now craft an iron pickaxe.To craft an iron pickaxe,type / / / * * *(With space)"
-while True:
-	answer = raw_input("What would you like to craft?: ")
-	clear()
-	if answer.lower() == "/ / / * * *":
-		break
-	print "There's no crafting recipe like that,try again."
+waitfor("/ / / * * *","There's no crafting recipe like that,try again.")
 ipick = ipick + 1
 stick2 = stick2 - 3
 siron = siron - 3
@@ -528,20 +557,10 @@ while diamond2 <= 2:
 print "Iron Pickaxe breaked."
 ipick = ipick - 1
 print "Okay,now craft a stick."
-while True:
-	answer = raw_input("What would you like to craft?: ")
-	clear()
-	if answer.lower() == "o o":
-		break
-	print "There's no crafting recipe like that,try again."
+waitfor("o o","There's no crafting recipe like that,try again.")
 stick2 = stick2 + 5
 print "Now craft a diamond pickaxe.To craft one,type / / / $ $ $(With space)"
-while True:
-	answer = raw_input("What would you like to craft?: ")
-	clear()
-	if answer.lower() == "/ / / $ $ $":
-		break
-	print "There's no crafting recipe like that,try again."
+waitfor("/ / / $ $ $","There's no crafting recipe like that,try again.")
 stick2 = stick2 - 3
 diamond2 = diamond2 - 3
 dpick = dpick + 1
@@ -587,12 +606,8 @@ time.sleep(2)
 print "Boss Math:THE FIRST WORD PROBLEM IS:JOHNY AND HIS FRIEND WENT OUT FOR A WALK,JOHNY FOUND SOME BEAUTIFUL STONES,AND HIS FRIEND HASN'T.JOHNY HAVE 10 STONES.JOHNY GAVE 5 TO HIS FRIEND.HOW MANY WERE LEFT TO JOHNY?"
 time.sleep(2)
 print "That one's easy,i dont need to tell you the choices."
-while True:
-	answer = raw_input("How many were left to Johny?: ")
-	clear()
-	if answer == "5":
-		break
-	print "That one's easy man!You can't even answer it?Try again."
+print "How many were left to johny?"
+waitfor("5","Your answer is wrong,try again.")
 time.sleep(1)
 print "Boss Math:DON'T CELEBRATE YET.YOU STILL HAVE MORE WORD PROBLEMS."
 time.sleep(2)
@@ -626,7 +641,61 @@ time.sleep(2)
 print "Snatcher:Here ya go,tnx!"
 point = point - 3
 jewel = jewel + 2
+score = score + 5
 print "Well done!You got the jewel!Now,level 4..."
+time.sleep(2)
+print "Level 4,hmmm......"
+time.sleep(2)
+print "Loading....."
+time.sleep(2)
+print "In Level 4,let me see.....Oh!This is fun!"
+time.sleep(2)
+print "You need to guess the right social media on the icon that shows up."
+time.sleep(1)
+print "First one:"
+print instagram
+waitfor("instagram","Your answer is wrong try again.")
+time.sleep(1)
+print "Second one:"
+print facebook
+time.sleep(1)
+while True:
+	answer = raw_input("Your Answer: ")
+	clear()
+	if answer.lower() == "facebook":
+		break
+	print "Your answer is wrong,try again."
+	print facebook
+time.sleep(1)
+print "Too easy?Try this!"
+print snapchat
+while True:
+	answer = raw_input("Your answer: ")
+	clear()
+	if answer.lower() == "snapchat":
+		break
+	print "Your answer is wrong,try again."
+	print snapchat
+time.sleep(1)
+print "Well,the next one's easy though."
+print youtube
+while True:
+	answer = raw_input("Your answer: ")
+	clear()
+	if answer.lower() == "youtube":
+		break
+	print "Your answer is wrong,try again."
+	print youtube
+time.sleep(1)
+print "Well,i bet you can't answer this!"
+print vine
+print "Congratulations!You got the jewel!"
+jewel = jewel + 1
+score = score + 5
+
+		
+
+
 
 
 
