@@ -1,10 +1,17 @@
 import os
 import time
-
 def clear():
 	os.system("clear")
 	print """
 """
+def waitfor(word,output):
+	
+	while True:
+		answer = raw_input("")
+		clear()
+		if answer.lower() == word:
+			break
+		print output
 score = 0
 jewel = 0
 wood = 0
@@ -28,6 +35,12 @@ dpick = 0
 spick = 0
 siron = 0
 obsidian = 0
+woods = 0
+stick3 = 0
+wsword = 0
+killed = 0
+keys = 0
+run = 0
 jewelart = """                               
                                 MMMMMMMMMMMMMMM                                 
                                 MMMMMMMMMMMMMMM                                 
@@ -231,9 +244,9 @@ vine = """ MMMMMMMMMM
                                    """
 
 time.sleep(1)
-answer = raw_input("Please type your name here.---> ")
+name1 = raw_input("Please type your name here.---> ")
 clear()
-if answer.lower() == "nia":
+if name1.lower() == "nia":
 	print "Hi maker of the program."
 else:
 	print "Hi",answer 
@@ -303,12 +316,8 @@ raw_input("Level 1,there's a jewel in that house!But it's guarded by the wizard.
 clear()
 raw_input("You can only get it if you answered his riddle.(Press Enter)")
 clear()
-while True:
-	penny = raw_input("What has a tail and a head and has no body?")
-	clear()
-	if penny.lower() == "penny":
-		break
-	print "Your answer is wrong.Try again."
+print "What has a tail and a head but no body?"
+waitfor("penny","Your answer is wrong,try again.")
 print "Your answer is correct!You got the jewel!"
 score = score + 5
 jewel = jewel + 1
@@ -352,12 +361,7 @@ while wood <= 15:
 print "Okay,now that you have enough wood craft a crafting bench."
 print "To craft a crafting bench you'll need 4 woods."
 print "To craft it place 4 wood with space on each of them.Just type four o's."
-while True:
-        bench = raw_input("")
-        clear()
-        if bench == "o o o o":
-               break
-        print "There's no crafting recipe like that.Try again."
+
 print "You crafted a crafting bench.But the crafting bench will only show up if needed."
 print "But,you also need to learn how to craft things."
 raw_input("Press Enter to show how to craft things in Level 2.")
@@ -374,11 +378,7 @@ time.sleep(1)
 raw_input("Press Enter when your done.")
 clear()
 print "Okay,your gonna craft a stick using the crafting bench.2 woods makes 5 sticks but you only need 3,but that's okay."
-while True:
-        craft = raw_input("")
-        clear()
-        if craft  == "o o":
-			break
+waitfor("o o","There's no crafting recipe like that,try again.")
 wood = wood - 2
 stick = stick + 5
 print "Okay,now to craft wooden planks.Use the crafting table to craft 10 wooden planks"
@@ -391,69 +391,39 @@ while plank <= 9:
 		if plank == 1:
 			print "You need to keep doing that until you have 10 wooden planks."
 print "Now that you have wooden planks,it's time to trade!Type t to trade."
-while True:
-	keyword = raw_input("")
-	clear()
-	if keyword.lower() == "t":
-		break 
-        print "You typed the wrong keyword.Try again."
+waitfor("t","You typed the wrong keyword,try again.")
 answer = raw_input("Librarian:3 stones for 10 wooden planks.Press Enter to trade.")
 clear()
 stone = stone + 3
 plank = plank - 10
 print "Now,to craft a stone pickaxe.You know what to do.Use the crafting table to craft it."
-while True:
-	pick = raw_input("What would you like to craft?:")
-	clear()
-	if pick == "/ / / @ @ @":
-		break
-	print "There's no crafting recipe like that.Try again."
+waitfor("/ / / @ @ @","There's no crafting recipe like that,try again.")
 pickaxe = pickaxe + 1
 stick = stick - 3
 stone = stone - 3
 print "Time to trade.Type t to trade."
-while True:
-	keyword = raw_input("")
-	clear()
-	if keyword == "t":
-		break
-	print "You type the wrong keyword.Try again."
+waitfor("t","You typed the wrong keyword,try again.")
 answer = raw_input("Blacksmith:10 cobblestones for 1 pickaxe.Press Enter to trade.")
 clear()
 print "You traded 1 pickaxe for 10 cobblestones."
 pickaxe = pickaxe - 1
 cobblestone = cobblestone + 10
 print "Now that you have cobblestones trade them for the next villager.Time to trade.Type t to trade."
-while True:
-	keyword2 = raw_input("")
-	clear()
-	if keyword2 == "t":
-		break
-	print "You typed the wrong keyword.Try again."
+waitfor("t","You typed the wrong keyword,try again.")
 answer = raw_input("Chef:2 emeralds for 10 cobblestones.Press Enter to trade.")
 clear()
 print "You traded 10 cobblestones for 2 emeralds."
 cobblestone = cobblestone - 10
 emerald = emerald + 2
 print "Time to trade!Again!Type t to trade."
-while True:
-	keyword3 = raw_input("")
-	clear()
-	if keyword3 == "t":
-		break
-	print "Wrong keyword.Try again."
+waitfor("t","You typed the wrong keyword,try again.")
 answer = raw_input("Miner:1 diamond for 2 emeralds.Press Enter to trade.")
 clear()
 print "You traded 2 emeralds for 1 diamond."
 emerald = emerald - 2
 diamond = diamond + 1
 print "Now,this is the final trade.Type t to trade."
-while True:
-	keyword4 = raw_input("")
-	clear()
-	if keyword4 == "t":
-		break
-	print "Wrong keyword.Try again."
+waitfor("t","You typed the wrong keyword,try again.")
 answer = raw_input("Witch:1 jewel for 1 diamond.Press Enter to trade.")
 clear()
 diamond = diamond - 1
@@ -461,49 +431,31 @@ jewel = jewel + 1
 score = score + 5
 print "You got the jewel!"
 print "You current score is",score
-
-print "You now have",jewel + "jewel"
-
+print "You now have",jewel 
 answer = raw_input("Press Enter to start level 3.")
 clear()
 answer = raw_input("Later...you were celebrating because you got 2 jewels.Well,not this time.(Press Enter)")
 clear()
 answer = raw_input("It got snatched by the snather!The snather has 2 jewels.You need to get it before it's too late.(Press Enter)")
 clear()
-
-answer = raw_input("Too get it,you need to pass 3 puzzles.The snatcher dealed with you that if you pass his puzzle,you will get the two jewels.Every puzzle has points.You need to give it to the snather,and the 2 jewels will be yours.(Press Enter)")
-
+answer = raw_input("To get it,you need to pass 3 puzzles.The snatcher dealed with you that if you pass his puzzle,you will get the two jewels.Every puzzle has points.You need to give it to the snather,and the 2 jewels will be yours.(Press Enter)")
 clear()
 answer = raw_input("First one is the wizard riddles.To pass that puzzle,you need to answer some riddles.(Press Enter)")
 clear()
 answer = raw_input("Second one is minecraft madness.To pass that puzzle,you will need to do the same thing on level 2.Well different i guess.I'ts just like the one you did on level 2.(Press Enter)")
 clear()
-
 answer = raw_input("Third one is Boss Math Battle.You will be battling Boss Math.To pass that puzzle,you need to answer some math questions.(Press Enter)")
-
 clear()
 answer = raw_input("Press Enter to start the first puzzle.")
 clear()
-while True:
-	riddle = raw_input("First riddle:What kind of table is good for you to eat?")
-	clear()
-	if riddle.lower() == "vegetable":
-		break
-	print "Your answer is wrong try again."
+print "First riddle:What kind of table is good for you to eat?"
+waitfor("vegetable","Your answer is wrong,try again.")
 print "Your answer is correct!Now,for the second riddle."
-while True:
-	riddle2 = raw_input("Second riddle:What season does humpty-dumpty hate the most?")
-	clear()
-	if riddle2.lower() == "the fall":
-		break
-	print "Your answer is wrong,try again."
+print "Second Riddle:What season does humpty-dumpty hate the most?"
+waitfor("the fall","Your answer is wrong,try again.")
 print "Your answer is correct!Now,for the final riddle."
-while True:
-	answer = raw_input("Final riddle:What is the sun's favourite day of the week?")
-	clear()
-	if answer.lower() == "sunday":
-		break
-	print "Your answer is wrong,try again."
+print "Final Riddle:What is the sun's favourite day of the week?"
+waitfor("sunday","Your answer is wrong,try again.")
 print "Your answer is correct!You got 1 point."
 point = point + 1
 answer = raw_input("Press enter to start the 2nd puzzle.")
@@ -523,6 +475,7 @@ while log <= 12:
 	clear()
 	if logs.lower() == "b":
 		log = log + 1
+		print "You now have",log
 	if log <= 1:
 		print "You need 12 more."
 print "Okay,now craft 3 sticks.Type this to craft it.---> o o."
@@ -537,12 +490,7 @@ stick2 = stick2 + 5
 log = log - 2
 print "Okay,now that you have enough things,craft a wooden pickaxe."
 print "To craft a wooden pickaxe,type this.---> / / / o o o(With space)"
-while True:
-	picka = raw_input("What would you like to craft?:")
-	clear()
-	if picka == "/ / / o o o":
-		break
-	print "There's no crafting recipe like that.Try again."
+waitfor("/ / / o o o","There's no crafting recipe like that,try again.")
 wpick = wpick + 1
 log = log - 3
 stick2 = stick2 - 3
@@ -558,22 +506,12 @@ while stone2 <= 2:
 	if stone2 <= 1:
 		print "You need 2 more."
 print "Now,craft sticks again."
-while True:
-	stic = raw_input("What would you like to craft?:")
-	clear()
-	if stic.lower() == "o o":
-		break
-	print "There's no crafting recipe like that,try again."
+waitfor("o o","There's no crafting recipe like that,try again.")
 stick2 = stick2 + 5
 log = log - 2
 print "Now that you have enough things,craft a stone pickaxe."
 print "To craft it,type this.---> / / / @ @ @"
-while True:
-	spicka = raw_input("What would you like to craft?:")
-	clear()
-	if spicka == "/ / / @ @ @":
-		break
-	print "There's no recipe like that,try again."
+waitfor("/ / / @ @ @","There's no crafting recipe like that,try again.")
 spick = spick + 1
 stone2 = stone2 - 3
 stick2 = stick2 - 3
@@ -606,20 +544,10 @@ while siron <= 2:
 	if siron <= 1:
 		print "You need 2 more."
 print "Okay,now craft sticks.Type o o."
-while True:
-	answer = raw_input("What would you like to craft?: ")
-	clear()
-	if answer.lower() == "o o":
-		break
-	print "There's no crafting recipe like that,try again."
+waitfor("o o","There's no crafting recipe like that,try again.")
 stick2 = stick2 + 5
 print "Now craft an iron pickaxe.To craft an iron pickaxe,type / / / * * *(With space)"
-while True:
-	answer = raw_input("What would you like to craft?: ")
-	clear()
-	if answer.lower() == "/ / / * * *":
-		break
-	print "There's no crafting recipe like that,try again."
+waitfor("/ / / * * *","There's no crafting recipe like that,try again.")
 ipick = ipick + 1
 stick2 = stick2 - 3
 siron = siron - 3
@@ -636,20 +564,10 @@ while diamond2 <= 2:
 print "Iron Pickaxe breaked."
 ipick = ipick - 1
 print "Okay,now craft a stick."
-while True:
-	answer = raw_input("What would you like to craft?: ")
-	clear()
-	if answer.lower() == "o o":
-		break
-	print "There's no crafting recipe like that,try again."
+waitfor("o o","There's no crafting recipe like that,try again.")
 stick2 = stick2 + 5
 print "Now craft a diamond pickaxe.To craft one,type / / / $ $ $(With space)"
-while True:
-	answer = raw_input("What would you like to craft?: ")
-	clear()
-	if answer.lower() == "/ / / $ $ $":
-		break
-	print "There's no crafting recipe like that,try again."
+waitfor("/ / / $ $ $","There's no crafting recipe like that,try again.")
 stick2 = stick2 - 3
 diamond2 = diamond2 - 3
 dpick = dpick + 1
@@ -695,12 +613,8 @@ time.sleep(2)
 print "Boss Math:THE FIRST WORD PROBLEM IS:JOHNY AND HIS FRIEND WENT OUT FOR A WALK,JOHNY FOUND SOME BEAUTIFUL STONES,AND HIS FRIEND HASN'T.JOHNY HAVE 10 STONES.JOHNY GAVE 5 TO HIS FRIEND.HOW MANY WERE LEFT TO JOHNY?"
 time.sleep(2)
 print "That one's easy,i dont need to tell you the choices."
-while True:
-	answer = raw_input("How many were left to Johny?: ")
-	clear()
-	if answer == "5":
-		break
-	print "That one's easy man!You can't even answer it?Try again."
+print "How many were left to johny?"
+waitfor("5","Your answer is wrong,try again.")
 time.sleep(1)
 print "Boss Math:DON'T CELEBRATE YET.YOU STILL HAVE MORE WORD PROBLEMS."
 time.sleep(2)
@@ -747,15 +661,185 @@ print "You need to guess the right social media on the icon that shows up."
 time.sleep(1)
 print "First one:"
 print instagram
+waitfor("instagram","Your answer is wrong try again.")
+time.sleep(1)
+print "Second one:"
+print facebook
+time.sleep(1)
 while True:
 	answer = raw_input("Your Answer: ")
 	clear()
-	if answer == "instagram":
+	if answer.lower() == "facebook":
 		break
 	print "Your answer is wrong,try again."
+	print facebook
 time.sleep(1)
-print "Second one:"
-print
+print "Too easy?Try this!"
+print snapchat
+while True:
+	answer = raw_input("Your answer: ")
+	clear()
+	if answer.lower() == "snapchat":
+		break
+	print "Your answer is wrong,try again."
+	print snapchat
+time.sleep(1)
+print "Well,the next one's easy though."
+print youtube
+while True:
+	answer = raw_input("Your answer: ")
+	clear()
+	if answer.lower() == "youtube":
+		break
+	print "Your answer is wrong,try again."
+	print youtube
+time.sleep(1)
+print "Well,i bet you can't answer this!"
+print vine
+waitfor("vine","Your answer is wrong,try again.")
+print "Congratulations!You got the jewel!"
+jewel = jewel + 1
+score = score + 5
+raw_input("Now,onto the next level.Level 5!!!Your almost there.(Press Enter)")
+clear()
+raw_input("So for level 5,you were walking.Then,you were knocked out by someone.(Press Enter)")
+clear()
+raw_input("You woked up on a room,that is tightly locked.Nobody gets in,and nobody gets out.(Press Enter)")
+clear()
+raw_input("You were being tested by the group called,'Ract'.Lame right?(Press Enter)")
+clear()
+raw_input("You will die soon,because they will get all your blood,just to make a medicine.(Press Enter)")
+clear()
+raw_input("So you need to find a way out before it's too late.They also have a jewel,you should go get it too.(Press Enter)")
+clear()
+raw_input("The key is being guarded by the security guard,you need to get it.(Press Enter)")
+clear()
+raw_input("To get it,you need to craft again.There's some plant's over there,they are kinda big.You need 9 wood.(Press Enter)")
+clear()
+print "To break it,type bw."
+while woods <= 8:
+        answer = raw_input("")
+        clear()
+        if answer.lower() == "bw":
+                woods = woods + 1
+        if woods <= 1:
+                print "You need 8 more."
+print "Okay,now craft a crafting table.Type 4 o's again with space on each."
+waitfor("o o o o","There's no crafting recipe like that,try again.")
+woods = woods - 4
+print "Okay,now craft sticks.Type 2 o's again with space on each."
+waitfor("o o","There's no crafting recipe like that,try again.")
+stick3 = stick3 + 5
+print "Now,craft a sword.Type this.---> o o /"
+waitfor("o o /","There's no crafting recipe like that,try again.")
+wsword = wsword + 1
+stick3 = stick3 - 1
+woods = woods - 2
+print "Okay,to attack type a."
+print "On,my signal."
+time.sleep(1)
+print "3"
+time.sleep(1)
+print "2"
+time.sleep(1)
+print "1"
+time.sleep(1)
+print "Go!!!!Just keep typing a 20 times!"
+while killed <= 19:
+        answer = raw_input("")
+        clear()
+        if answer.lower() == "a":
+                killed = killed + 1
+                print "You killed",killed
+        if killed <= 1:
+                print "Type a 19 more!GO!!!!"
+print "That was...So scary!Well,it was fun though,for me."
+time.sleep(1)
+answer = raw_input("Was it fun?Y/N: ")
+if answer.lower() == "y":
+        print "Good!Because,you and i enjoyed it."
+else:
+        print "Well,okay."
+time.sleep(1)
+print "Now,you need to take the key,and unlock the door."
+time.sleep(2)
+print "Type e to take it."
+waitfor("e","You typed the wrong keyword,try again.")
+keys = keys + 1
+print "Okay,type o to unclock the door."
+waitfor("o","You typed the wrong keyword try again.")
+keys = keys - 1
+print "Now,take the jewel,type ej to take it."
+waitfor("ej","You typed the wrong keyword,try again.")
+jewel = jewel + 1
+score = score + 5
+print "Now,escape!!!!Keep typing r 20 to escape!"
+while run <= 19:
+        answer = raw_input("")
+        clear()
+        if answer.lower() == "r":
+                run = run + 1
+        if run <= 1:
+             print "Go!!!!19 more!!!"
+print "Now,take a deep breath.Type d to take a longgg niceee breathhhhh..."
+waitfor("d","C'mon,that's the wrong one,try again.")
+run = run - 20
+print "Congratulations!!!!!!!You got 5 jewels and 25 points!!!!!!!"
+time.sleep(1)
+print "Now,let's give this to the geany."
+time.sleep(1)
+print "Loading...."
+time.sleep(1)
+raw_input("Geany:Well done.You got the jewel.You may now go home.Stingaling ngaling...Boom boom zuming!(Press Enter)")
+print "Geany:Well,he didn't say thank you."
+time.sleep(1)
+print "Well done!But i may now say,bye.Bye,my old friend.Sting!"
+time.sleep(1)
+answer = raw_input("THE END...Want a post credit?Y/N: ")
+if answer.lower() == "y":
+        print "Okay."
+else:
+        print "Mkay,bye!"
+print "(scary music playin)???:Hmm...",name1 + "huh?"
+time.sleep(2)
+print "Bring",name1 + "to me."
+time.sleep(1)
+print "Assistant:Yes sir."
+time.sleep(1)
+print "Rrr..."
+time.sleep(2)
+raw_input("To be continued...Press Enter to continue.")
+clear()
+print "Credits"
+time.sleep(1)
+print "Game by:niaadrales"
+time.sleep(1)
+print "Yo!What's up!I'm nia.The creator of the game!"
+time.sleep(1)
+print "I'm 10 years old,and,yeah."
+time.sleep(1)
+print "Wanna follow my social medias?Here:"
+time.sleep(1)
+print "Instagram:@miss_nia3810"
+time.sleep(1)
+print "Facebook:Nia Kristel Salas Adrales(I have many account there,so just follow all of them.It's so confusing."
+time.sleep(1)
+print "Pinterest:Nia Kristel"
+time.sleep(1)
+print "Wattpad:@miss_potpot"
+time.sleep(1)
+print "Youtube:Chibi 101"
+time.sleep(1)
+print "And,keep that preety smile on your face,and see ya!Peace out!"
+time.sleep(1)
+print "To be continued....."
+
+
+
+       
+
+
+		
 
 
 

@@ -35,6 +35,12 @@ dpick = 0
 spick = 0
 siron = 0
 obsidian = 0
+woods = 0
+stick3 = 0
+wsword = 0
+killed = 0
+keys = 0
+run = 0
 jewelart = """                               
                                 MMMMMMMMMMMMMMM                                 
                                 MMMMMMMMMMMMMMM                                 
@@ -238,9 +244,9 @@ vine = """ MMMMMMMMMM
                                    """
 
 time.sleep(1)
-answer = raw_input("Please type your name here.---> ")
+name1 = raw_input("Please type your name here.---> ")
 clear()
-if answer.lower() == "nia":
+if name1.lower() == "nia":
 	print "Hi maker of the program."
 else:
 	print "Hi",answer 
@@ -469,6 +475,7 @@ while log <= 12:
 	clear()
 	if logs.lower() == "b":
 		log = log + 1
+		print "You now have",log
 	if log <= 1:
 		print "You need 12 more."
 print "Okay,now craft 3 sticks.Type this to craft it.---> o o."
@@ -525,12 +532,12 @@ spick = spick - 1
 print "Stone Pickaxe breaked."
 print "Okay,to smelt it,use sticks as coal."
 print "To smelt iron,type si"
-siron = int(sirons)
+siron = int(siron)
 
 while siron <= 2:
 	sirons = raw_input("")
 	clear()
-	if answer.lower() == "si":
+	if sirons.lower() == "si":
 		siron = siron + 1
 		iron = iron - 1
 		print "You now have",siron
@@ -693,6 +700,144 @@ waitfor("vine","Your answer is wrong,try again.")
 print "Congratulations!You got the jewel!"
 jewel = jewel + 1
 score = score + 5
+raw_input("Now,onto the next level.Level 5!!!Your almost there.(Press Enter)")
+clear()
+raw_input("So for level 5,you were walking.Then,you were knocked out by someone.(Press Enter)")
+clear()
+raw_input("You woked up on a room,that is tightly locked.Nobody gets in,and nobody gets out.(Press Enter)")
+clear()
+raw_input("You were being tested by the group called,'Ract'.Lame right?(Press Enter)")
+clear()
+raw_input("You will die soon,because they will get all your blood,just to make a medicine.(Press Enter)")
+clear()
+raw_input("So you need to find a way out before it's too late.They also have a jewel,you should go get it too.(Press Enter)")
+clear()
+raw_input("The key is being guarded by the security guard,you need to get it.(Press Enter)")
+clear()
+raw_input("To get it,you need to craft again.There's some plant's over there,they are kinda big.You need 9 wood.(Press Enter)")
+clear()
+print "To break it,type bw."
+while woods <= 8:
+        answer = raw_input("")
+        clear()
+        if answer.lower() == "bw":
+                woods = woods + 1
+        if woods <= 1:
+                print "You need 8 more."
+print "Okay,now craft a crafting table.Type 4 o's again with space on each."
+waitfor("o o o o","There's no crafting recipe like that,try again.")
+woods = woods - 4
+print "Okay,now craft sticks.Type 2 o's again with space on each."
+waitfor("o o","There's no crafting recipe like that,try again.")
+stick3 = stick3 + 5
+print "Now,craft a sword.Type this.---> o o /"
+waitfor("o o /","There's no crafting recipe like that,try again.")
+wsword = wsword + 1
+stick3 = stick3 - 1
+woods = woods - 2
+print "Okay,to attack type a."
+print "On,my signal."
+time.sleep(1)
+print "3"
+time.sleep(1)
+print "2"
+time.sleep(1)
+print "1"
+time.sleep(1)
+print "Go!!!!Just keep typing a 20 times!"
+while killed <= 19:
+        answer = raw_input("")
+        clear()
+        if answer.lower() == "a":
+                killed = killed + 1
+                print "You killed",killed
+        if killed <= 1:
+                print "Type a 19 more!GO!!!!"
+print "That was...So scary!Well,it was fun though,for me."
+time.sleep(1)
+answer = raw_input("Was it fun?Y/N: ")
+if answer.lower() == "y":
+        print "Good!Because,you and i enjoyed it."
+else:
+        print "Well,okay."
+time.sleep(1)
+print "Now,you need to take the key,and unlock the door."
+time.sleep(2)
+print "Type e to take it."
+waitfor("e","You typed the wrong keyword,try again.")
+keys = keys + 1
+print "Okay,type o to unclock the door."
+waitfor("o","You typed the wrong keyword try again.")
+keys = keys - 1
+print "Now,take the jewel,type ej to take it."
+waitfor("ej","You typed the wrong keyword,try again.")
+jewel = jewel + 1
+score = score + 5
+print "Now,escape!!!!Keep typing r 20 to escape!"
+while run <= 19:
+        answer = raw_input("")
+        clear()
+        if answer.lower() == "r":
+                run = run + 1
+        if run <= 1:
+             print "Go!!!!19 more!!!"
+print "Now,take a deep breath.Type d to take a longgg niceee breathhhhh..."
+waitfor("d","C'mon,that's the wrong one,try again.")
+run = run - 20
+print "Congratulations!!!!!!!You got 5 jewels and 25 points!!!!!!!"
+time.sleep(1)
+print "Now,let's give this to the geany."
+time.sleep(1)
+print "Loading...."
+time.sleep(1)
+raw_input("Geany:Well done.You got the jewel.You may now go home.Stingaling ngaling...Boom boom zuming!(Press Enter)")
+print "Geany:Well,he didn't say thank you."
+time.sleep(1)
+print "Well done!But i may now say,bye.Bye,my old friend.Sting!"
+time.sleep(1)
+answer = raw_input("THE END...Want a post credit?Y/N: ")
+if answer.lower() == "y":
+        print "Okay."
+else:
+        print "Mkay,bye!"
+print "(scary music playin)???:Hmm...",name1 + "huh?"
+time.sleep(2)
+print "Bring",name1 + "to me."
+time.sleep(1)
+print "Assistant:Yes sir."
+time.sleep(1)
+print "Rrr..."
+time.sleep(2)
+raw_input("To be continued...Press Enter to continue.")
+clear()
+print "Credits"
+time.sleep(1)
+print "Game by:niaadrales"
+time.sleep(1)
+print "Yo!What's up!I'm nia.The creator of the game!"
+time.sleep(1)
+print "I'm 10 years old,and,yeah."
+time.sleep(1)
+print "Wanna follow my social medias?Here:"
+time.sleep(1)
+print "Instagram:@miss_nia3810"
+time.sleep(1)
+print "Facebook:Nia Kristel Salas Adrales(I have many account there,so just follow all of them.It's so confusing."
+time.sleep(1)
+print "Pinterest:Nia Kristel"
+time.sleep(1)
+print "Wattpad:@miss_potpot"
+time.sleep(1)
+print "Youtube:Chibi 101"
+time.sleep(1)
+print "And,keep that preety smile on your face,and see ya!Peace out!"
+time.sleep(1)
+print "To be continued....."
+
+
+
+       
+
 
 		
 
