@@ -562,6 +562,33 @@ print "You finished the 2nd level!That was the hardest one though."
 point = point + 1
 print "You now got",point
 print "The third puzzle,much like a test maybe.But,Boss Math is going to speak to you so...Baii!!!"
+print "And also,i will give you all the answer choices after he speaks."
+time.sleep(5)
+print "Loading....."
+time.sleep(2)
+print "Boss Math:I AM BOSS MATH!THE BOSS OF THE MATH.HOW DO YOU SAY IT?"
+time.sleep(2)
+print "Assistant:The boss of the entire math."
+time.sleep(2)
+print "Boss Math:THE BOSS OF THE ENTIRE  MATH."
+time.sleep(2)
+print "Boss Math:YOU DIE OR LIVE I'M STILL LIVING."
+time.sleep(2)
+print "Assistant:That's so lame boss."
+time.sleep(2)
+print "Boss Math:IT'S OK!IT'S MY TURN TO SPEAK!"
+time.sleep(2)
+print "Assistant:Sorry boss."
+time.sleep(2)
+print "Oh,i thought it was real,but,it turns out to be a hologram."
+time.sleep(2)
+print "Well,let's start this shall we?"
+time.sleep(2)
+print "Boss Math:THE FIRST WORD PROBLEM IS:JOHNY AND HIS FRIEND WENT OUT FOR A WALK,JOHNY FOUND SOME BEAUTIFUL STONES,AND HIS FRIEND HASN'T.JOHNY HAVE 10 STONES.JOHNY GAVE 5 TO HIS FRIEND.HOW MANY WERE LEFT TO JOHNY?"
+time.sleep(2)
+print "That one's easy,i dont need to tell you the choices."
+
+
 
 
 

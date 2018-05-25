@@ -562,6 +562,73 @@ print "You finished the 2nd level!That was the hardest one though."
 point = point + 1
 print "You now got",point
 print "The third puzzle,much like a test maybe.But,Boss Math is going to speak to you so...Baii!!!"
+print "And also,i will give you all the answer choices after he speaks."
+time.sleep(5)
+print "Loading....."
+time.sleep(2)
+print "Boss Math:I AM BOSS MATH!THE BOSS OF THE MATH.HOW DO YOU SAY IT?"
+time.sleep(2)
+print "Assistant:The boss of the entire math."
+time.sleep(2)
+print "Boss Math:THE BOSS OF THE ENTIRE  MATH."
+time.sleep(2)
+print "Boss Math:YOU DIE OR LIVE I'M STILL LIVING."
+time.sleep(2)
+print "Assistant:That's so lame boss."
+time.sleep(2)
+print "Boss Math:IT'S OK!IT'S MY TURN TO SPEAK!"
+time.sleep(2)
+print "Assistant:Sorry boss."
+time.sleep(2)
+print "Oh,i thought it was real,but,it turns out to be a hologram."
+time.sleep(2)
+print "Well,let's start this shall we?"
+time.sleep(2)
+print "Boss Math:THE FIRST WORD PROBLEM IS:JOHNY AND HIS FRIEND WENT OUT FOR A WALK,JOHNY FOUND SOME BEAUTIFUL STONES,AND HIS FRIEND HASN'T.JOHNY HAVE 10 STONES.JOHNY GAVE 5 TO HIS FRIEND.HOW MANY WERE LEFT TO JOHNY?"
+time.sleep(2)
+print "That one's easy,i dont need to tell you the choices."
+while True:
+	answer = raw_input("How many were left to Johny?: ")
+	clear()
+	if answer == "5":
+		break
+	print "That one's easy man!You can't even answer it?Try again."
+time.sleep(1)
+print "Boss Math:DON'T CELEBRATE YET.YOU STILL HAVE MORE WORD PROBLEMS."
+time.sleep(2)
+print "Boss Math:THE SECOND WORD PROBLEM IS:JOHNY BOUGHT A BOOK AND A PEN,IF IT COST 1,000,000 DOLLARS AND 1 DOLLAR,HOW MUCH DID HE PAY?"
+time.sleep(2)
+print "You can beat this boss in no time man!"
+while True:
+	answer = raw_input("How much did Johny pay?No need to put a dollar sign or whatever,just the number.: ")
+	clear()
+	if answer == "1,000,001":
+		break
+	print "What?Still can't do it?That one's sooo easy man!Try again."
+time.sleep(1)
+print "Boss Math:I SEE...YOUR REALLY GOOD AT MATH HUH?WELL,TRY THIS!:JOHNY EATS 2 ORANGES IN A DAY,HOW MANY WILL HE EAT IN THE MONTH OF MARCH,2018?"
+time.sleep(3)
+print "Easy too.."
+while True:
+	answer = raw_input("How many will he eat in the month of march 2018?")
+	clear()
+	if answer == "62":
+		break
+	print "OMG your killin' meh!!!That's so easy!Try again!"
+time.sleep(1)
+print "Boss Math:OH MY GOSH!I CAN'T TAKE IT ANYMORE!HERE'S YOUR POINT,GO AWAY NOW!"
+time.sleep(2)
+point = point + 1
+print "Good job,now let's give all the points to the snatcher."
+time.sleep(2)
+print "Loading....."
+time.sleep(2)
+print "Snatcher:Here ya go,tnx!"
+point = point - 3
+jewel = jewel + 2
+print "Well done!You got the jewel!Now,level 4..."
+
+
 
 
 
