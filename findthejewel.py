@@ -554,6 +554,7 @@ print "Diamond pickaxe breaked"
 print "You finished the 2nd level!That was the hardest one though."
 point = point + 1
 print "You now got",point
+print "The third puzzle,much like a test maybe.But,Boss Math is going to speak to you so...Baii!!!"
 
 
 
