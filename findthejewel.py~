@@ -532,12 +532,12 @@ spick = spick - 1
 print "Stone Pickaxe breaked."
 print "Okay,to smelt it,use sticks as coal."
 print "To smelt iron,type si"
-siron = int(sirons)
+siron = int(siron)
 
 while siron <= 2:
 	sirons = raw_input("")
 	clear()
-	if answer.lower() == "si":
+	if sirons.lower() == "si":
 		siron = siron + 1
 		iron = iron - 1
 		print "You now have",siron
