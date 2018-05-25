@@ -689,6 +689,7 @@ while True:
 time.sleep(1)
 print "Well,i bet you can't answer this!"
 print vine
+waitfor("vine","Your answer is wrong,try again.")
 print "Congratulations!You got the jewel!"
 jewel = jewel + 1
 score = score + 5
