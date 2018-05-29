@@ -785,6 +785,7 @@ print "Now,take a deep breath.Type d to take a longgg niceee breathhhhh..."
 waitfor("d","C'mon,that's the wrong one,try again.")
 run = run - 20
 print "Congratulations!!!!!!!You got 5 jewels and 25 points!!!!!!!"
+print finaljewel
 time.sleep(1)
 print "Now,let's give this to the geany."
 time.sleep(1)
