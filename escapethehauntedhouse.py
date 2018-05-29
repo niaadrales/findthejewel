@@ -87,7 +87,7 @@ print "If your out of days,you will go back to the start."
 time.sleep(1)
 print "DAY 1"
 time.sleep(1)
-
+print "You:Uh...My head feels so bad."
 
         
 
