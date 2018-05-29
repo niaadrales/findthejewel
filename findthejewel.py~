@@ -800,6 +800,7 @@ if answer.lower() == "y":
         print "Okay."
 else:
         print "Mkay,bye!"
+        exit()
 print "(scary music playin)???:Hmm...",name1 + "huh?"
 time.sleep(2)
 print "Bring",name1 + "to me."
