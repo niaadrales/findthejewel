@@ -773,7 +773,7 @@ print "Now,take the jewel,type ej to take it."
 waitfor("ej","You typed the wrong keyword,try again.")
 jewel = jewel + 1
 score = score + 5
-print "Now,escape!!!!Keep typing r 20 to escape!"
+print "Now,escape!!!!Keep typing r 20 times to escape!"
 while run <= 19:
         answer = raw_input("")
         clear()
